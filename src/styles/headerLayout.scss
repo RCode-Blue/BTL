@@ -1,6 +1,16 @@
 @import "./_variables.sass";
 
 .header {
-  display: flex;
-  flex-direction: row;
+  background-color: $color-header-light;
+  &__wrapper {
+    max-width: $outer-width-max;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

@@ -1,5 +1,10 @@
 @import "./_variables.sass";
 
+.nav-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .nav {
   font-size: $font-size-topnav;
 
@@ -8,7 +13,7 @@
   flex-wrap: wrap;
   justify-content: center;
   & > div {
-    padding: 2rem;
+    padding: 1rem;
     a:link {
       text-decoration: none;
       color: $color-header-dark;
@@ -20,8 +25,13 @@
 
     a:hover {
       text-decoration: none;
-      color: $color-header-dark;
-      transform: scale(1.2);
+      // transform: scale(1.2);
+      // color: $color-header-light;
+      // background-color: $color-header-dark;
+      // @at-root.div {
+      //   color: $color-header-light;
+      //   background-color: $color-header-dark;
+      // }
     }
 
     a:active {
