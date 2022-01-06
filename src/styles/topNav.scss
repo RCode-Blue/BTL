@@ -1,0 +1,32 @@
+@import "./_variables.sass";
+
+.nav {
+  font-size: $font-size-topnav;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  & > div {
+    padding: 2rem;
+    a:link {
+      text-decoration: none;
+      color: $color-header-dark;
+    }
+    a:visited {
+      text-decoration: none;
+      color: $color-header-dark;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $color-header-dark;
+      transform: scale(1.2);
+    }
+
+    a:active {
+      text-decoration: none;
+      color: $color-header-dark;
+    }
+  }
+}

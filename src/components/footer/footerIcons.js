@@ -1,0 +1,44 @@
+import React from "react";
+// import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+
+const FooterIcons = () => {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com">
+            <StaticImage
+              width={20}
+              height={20}
+              src="../../assets/icons/instagram.png"
+              alt="instagram icon"
+            ></StaticImage>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com">
+            <StaticImage
+              width={20}
+              height={20}
+              src="../../assets/icons/facebook.png"
+              alt="facebook icon"
+            ></StaticImage>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <StaticImage
+              width={20}
+              height={20}
+              src="../../assets/icons/twitter.png"
+              alt="twitter icon"
+            ></StaticImage>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default FooterIcons;
