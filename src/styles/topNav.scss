@@ -1,11 +1,12 @@
-@import "./_variables.sass";
+@import "./shared/_variables.sass";
+@import "../styles/shared/mixins";
 
-.nav-wrapper {
+.topnav-wrapper {
   display: inline-block;
   vertical-align: middle;
 }
 
-.nav {
+.topnav-bar {
   font-size: $font-size-topnav;
 
   display: flex;
@@ -13,30 +14,9 @@
   flex-wrap: wrap;
   justify-content: center;
   & > div {
+    @include nav-element-styling;
+    @include nav-element-styling__darktxt;
+
     padding: 1rem;
-    a:link {
-      text-decoration: none;
-      color: $color-header-dark;
-    }
-    a:visited {
-      text-decoration: none;
-      color: $color-header-dark;
-    }
-
-    a:hover {
-      text-decoration: none;
-      // transform: scale(1.2);
-      // color: $color-header-light;
-      // background-color: $color-header-dark;
-      // @at-root.div {
-      //   color: $color-header-light;
-      //   background-color: $color-header-dark;
-      // }
-    }
-
-    a:active {
-      text-decoration: none;
-      color: $color-header-dark;
-    }
   }
 }

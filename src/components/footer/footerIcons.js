@@ -2,11 +2,13 @@ import React from "react";
 // import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+import "../../styles/footerIcons.scss";
+
 const FooterIcons = () => {
   return (
-    <nav>
-      <ul>
-        <li>
+    <div className="footericons-wrapper">
+      <nav className="footericons-bar">
+        <div>
           <a href="https://www.instagram.com">
             <StaticImage
               width={20}
@@ -15,8 +17,8 @@ const FooterIcons = () => {
               alt="instagram icon"
             ></StaticImage>
           </a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="https://www.facebook.com">
             <StaticImage
               width={20}
@@ -25,8 +27,8 @@ const FooterIcons = () => {
               alt="facebook icon"
             ></StaticImage>
           </a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="https://www.twitter.com">
             <StaticImage
               width={20}
@@ -35,9 +37,9 @@ const FooterIcons = () => {
               alt="twitter icon"
             ></StaticImage>
           </a>
-        </li>
-      </ul>
-    </nav>
+        </div>
+      </nav>
+    </div>
   );
 };
 

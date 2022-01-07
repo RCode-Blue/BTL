@@ -1,10 +1,14 @@
 import React from "react";
 
 import MainLayout from "../layouts/mainLayout";
-// import TopBar from "../components/header/topBar";
+import HomeLayout from "../layouts/homeLayout";
 
 function App() {
-  return <MainLayout></MainLayout>;
+  return (
+    <MainLayout>
+      <HomeLayout />
+    </MainLayout>
+  );
 }
 
 export default App;

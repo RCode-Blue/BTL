@@ -1,0 +1,11 @@
+@import "./shared/_variables.sass";
+@import "./shared/mixins";
+
+.footer-content {
+  max-width: $inner-width-max;
+  margin: auto;
+  padding: 2rem 0;
+  > p {
+    text-align: justify;
+  }
+}

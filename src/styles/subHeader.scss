@@ -1,0 +1,7 @@
+@import "./shared/_variables.sass";
+@import "./shared//mixins";
+
+.subtitle {
+  font-size: $font-size-subheader-title;
+  color: $color-content-dark;
+}

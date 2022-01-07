@@ -1,0 +1,19 @@
+@import "./shared/_variables.sass";
+@import "./shared/_mixins";
+
+.footer {
+  background-color: $color-header-dark;
+  width: 100%;
+  font-size: $font-size-footer;
+  &__wrapper {
+    @include header-footer-wrapper-positioning;
+    color: $color-header-light;
+  }
+
+  &__bottom {
+    @include footer-bottom-elements;
+    justify-content: space-around;
+    margin: auto;
+    max-width: $inner-width-max;
+  }
+}

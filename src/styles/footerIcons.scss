@@ -1,0 +1,14 @@
+@import "./shared/_variables.sass";
+@import "./shared/mixins";
+
+.footericons-wrapper {
+  margin: auto;
+}
+
+.footericons-bar {
+  @include nav-bar-structure;
+
+  > div {
+    padding: 1rem;
+  }
+}

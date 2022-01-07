@@ -1,9 +1,13 @@
 import React from "react";
 import { link } from "gatsby";
 
+import "../../styles/shared/_mixins.scss";
+import "../../styles/footerContent.scss";
+
 const FooterContent = () => {
   return (
     <div
+      className="footer-content"
       role="contentinfo"
       tabIndex="1"
       aria-roledescription="acknowledgement of country"
@@ -11,7 +15,7 @@ const FooterContent = () => {
       <p>
         Brisbane Tool Library acknowledges the Turrbal people of Yuggera County
         as the traditional custodians of the lands where we live. Australia
-        always was and always be aboriginal land.
+        always was and always will be aboriginal land.
       </p>
     </div>
   );

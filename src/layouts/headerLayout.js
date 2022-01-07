@@ -10,7 +10,7 @@ const HeaderLayout = () => {
   return (
     <div className="header">
       <div className="header__wrapper">
-        <div className="header__content">
+        <div className="header__bar">
           <BtlLogo />
           <TopNav />
         </div>

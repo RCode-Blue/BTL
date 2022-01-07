@@ -6,8 +6,8 @@ import "../../styles/topNav.scss";
 
 const TopNav = () => {
   return (
-    <div className="nav-wrapper">
-      <nav className="nav">
+    <div className="topnav-wrapper">
+      <nav className="topnav-bar">
         <div>
           <Link to="/">Home</Link>
         </div>

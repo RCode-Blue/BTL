@@ -1,0 +1,12 @@
+@import "./shared/_variables.sass";
+@import "./shared/mixins";
+
+.footer-nav {
+  @include nav-bar-structure;
+  justify-content: center;
+
+  > div {
+    @include nav-element-styling;
+    @include nav-element-styling__lighttxt;
+  }
+}

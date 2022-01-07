@@ -1,0 +1,73 @@
+@import "./_variables.sass";
+
+@mixin header-footer-wrapper-positioning {
+  max-width: $outer-width-max;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 3rem;
+}
+
+@mixin nav-bar-structure {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin nav-element-styling {
+  padding: 1rem 2rem;
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+}
+
+@mixin nav-element-styling__darktxt {
+  a:link {
+    color: $color-header-dark;
+  }
+  a:visited {
+    color: $color-header-dark;
+  }
+
+  a:hover {
+    color: $color-header-dark;
+  }
+
+  a:active {
+    color: $color-header-dark;
+  }
+}
+
+@mixin nav-element-styling__lighttxt {
+  a:link {
+    color: $color-header-light;
+  }
+  a:visited {
+    color: $color-header-light;
+  }
+
+  a:hover {
+    color: $color-header-light;
+  }
+
+  a:active {
+    color: $color-header-light;
+  }
+}
+
+@mixin footer-bottom-elements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
