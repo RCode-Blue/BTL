@@ -5,37 +5,37 @@ import "../../../styles/shared/_mixins.scss";
 import "../../../styles/subHeader.scss";
 
 const renderSubheaderTitle = (title) => {
-  return <div className="subtitle">{title}</div>;
+  return (
+    <div className="subtitle">
+      <div className="subtitle__box">{title}</div>
+    </div>
+  );
 };
 
 const renderSubNavi = (navLinks) => {
   // console.log(navLinks);
 
-  navLinks.forEach((navi) => console.log(navi));
+  // navLinks.forEach((navi) => console.log(navi));
 
   return (
-    <div>
-      <p>navlinks start</p>
+    <div className="subnav">
       {navLinks.map((navi) => {
         return (
-          <div key={navi.id}>
+          <div key={navi.id} className="subnav__item">
             <Link to={navi.url}>{navi.text}</Link>
           </div>
         );
       })}
-      <p>navlinks end</p>
     </div>
   );
 };
 
 const subHeader = (data) => {
   return (
-    <div>
-      <div>{renderSubheaderTitle(data.title)}</div>
-      <div>
-        <p>navigation-start</p>
-        {renderSubNavi(data.navLinks)}
-        <p>navigation-end</p>
+    <div className="subHeader-wrapper">
+      <div className="subHeader">
+        <div>{renderSubheaderTitle(data.title)}</div>
+        <div>{renderSubNavi(data.navLinks)}</div>
       </div>
     </div>
   );

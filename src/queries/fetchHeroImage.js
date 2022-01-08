@@ -1,18 +1,14 @@
-// import React from "react";
-
 import { graphql, useStaticQuery } from "gatsby";
 
 const query = graphql`
   {
-    allContentfulLogo(filter: { title: { regex: "/BTL Logo/" } }) {
+    allContentfulBannerImage(filter: { active: { eq: true } }) {
       edges {
         node {
           id
-          slug
-          contentful_id
           image {
-            id
             gatsbyImageData
+            description
             title
           }
         }
@@ -21,9 +17,9 @@ const query = graphql`
   }
 `;
 
-const BtlLogoData = () => {
+const HeroImageData = () => {
   const data = useStaticQuery(query);
   return data;
 };
 
-export default BtlLogoData;
+export default HeroImageData;

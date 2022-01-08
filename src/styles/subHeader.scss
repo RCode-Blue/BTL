@@ -2,6 +2,38 @@
 @import "./shared//mixins";
 
 .subtitle {
+  // border-bottom: 0.5rem solid $color-header-light;
+  // display: inline-block;
+
+  margin: auto;
+
   font-size: $font-size-subheader-title;
-  color: $color-content-dark;
+  color: $color-header-light;
+  text-align: center;
+  &__box {
+    display: inline-block;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-header-light;
+  }
+}
+
+.subnav {
+  @include nav-bar-structure;
+  justify-content: center;
+  font-size: $font-size-subnav;
+
+  &__item {
+    @include nav-element-styling;
+    @include nav-element-styling__lighttxt;
+  }
+}
+
+.subHeader-wrapper {
+  background-color: $color-header-dark;
+  padding: 2rem 0;
+}
+
+.subHeader {
+  display: flex;
+  flex-direction: column;
 }
