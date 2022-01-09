@@ -1,4 +1,4 @@
-@import "./_variables.sass";
+@import "./_variables.scss";
 
 @mixin header-footer-wrapper-positioning {
   max-width: $outer-width-max;
@@ -16,6 +16,7 @@
 
 @mixin nav-element-styling {
   padding: 1rem 2rem;
+
   a:link {
     text-decoration: none;
   }
@@ -29,6 +30,9 @@
 
   a:active {
     text-decoration: none;
+  }
+  > a {
+    cursor: default;
   }
 }
 
@@ -71,3 +75,14 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+// Responsive
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+// @mixin respon

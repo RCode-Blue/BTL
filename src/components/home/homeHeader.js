@@ -1,8 +1,9 @@
 import React from "react";
 
 import subHeader from "../_reusables/subheader/subHeader";
+import subNavLinks from "./subNavLinks";
 
-const Header = () => {
+const HomeHeader = () => {
   const renderSubheading = (title) => {
     return subHeader(title);
   };
@@ -39,4 +40,4 @@ const Header = () => {
     </div>
   );
 };
-export default Header;
+export default HomeHeader;

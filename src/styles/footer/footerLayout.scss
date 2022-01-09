@@ -1,5 +1,5 @@
-@import "./shared/_variables.sass";
-@import "./shared/_mixins";
+@import "../shared/_variables.scss";
+@import "../shared/_mixins";
 
 .footer {
   background-color: $color-header-dark;

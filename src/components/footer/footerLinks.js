@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import "../../styles/main.scss";
-import "../../styles/footerLinks.scss";
+import "../../styles/footer/footerLinks.scss";
 
 const FooterLinks = () => {
   return (

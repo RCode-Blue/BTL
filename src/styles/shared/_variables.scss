@@ -1,0 +1,77 @@
+// FONT IMPORT
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
+
+// DIMENSIONS
+$outer-width-max: 120rem; // For Top Bar and Footer
+
+$inner-width-max: 100rem; // For Content Sections
+$inner-width-max-tab: 85vw;
+$inner-width-max-mob: 95vw;
+
+$section-padding-tb: 1rem;
+$section-padding-lr: 1rem;
+
+$section-margin-lr: 1rem;
+
+$menuitem-padding-tb: 1rem;
+$menuitem-padding-lr: 1rem;
+
+$menugroup-padding-tb: 1rem;
+
+$horbar-padding-tb: 1rem;
+
+$section-padding-tb: 1rem;
+
+// COLOURS
+$color-ivory1: #fcf3dd;
+$color-ivory2: #f8e8c2;
+
+$color-blue1: #3f4852;
+$color-blue2: #2d343c;
+
+$color-header-light: #f8e8c2;
+$color-header-dark: #2d343c;
+
+$color-content-light: #fcf3dd;
+$color-content-dark: #3f4852;
+$color-content-transparent: rgba(255, 255, 255, 0);
+$color-content-dark-opacity_1: rgba(62, 71, 81, 0.5);
+
+$color-topnav-selected-bg: #2d343c;
+$color-topnav-selected-text: #f8e8c2;
+
+// FONTS - FAMILY
+$font-fam1: "DM Sans";
+$font-fam1-backup1: "Arial";
+$font-fam1-backup2: "Verdana";
+
+$font-fam2: "DM Mono";
+
+// FONTS - SIZES
+$font-size-topnav: 2.2rem;
+$font-size-subheader-title: 3.2rem;
+$font-size-subnav: 1.8rem;
+
+$font-size-hero-text: 3.5rem;
+$font-size-hero-text_wscr: 2.8rem;
+$font-size-hero-text_lap: 2.4rem;
+$font-size-hero-text_tab: 2rem;
+$font-size-hero-text_mob: 1.6rem;
+
+$font-size-hero-button: 1.8rem;
+$font-size-hero-button_wscr: 1.8rem;
+$font-size-hero-button_lap: 1.8rem;
+$font-size-hero-button_tab: 1.6rem;
+$font-size-hero-button_mob: 1.4rem;
+
+$font-size-footer: 1.6rem;
+
+// Breakpoints
+// extra large screen: >1200px | wide screen: 1200px | laptop (1024px) | tablet (768px) | Mobile (480px)
+$breakpoints: (
+  "wscr": 1200px,
+  "lap": 1024px,
+  "tab": 768px,
+  "mob": 480px,
+) !default;

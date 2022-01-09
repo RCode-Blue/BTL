@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-import "../../styles/footerIcons.scss";
+import "../../styles/footer/footerIcons.scss";
 
 const FooterIcons = () => {
   return (
