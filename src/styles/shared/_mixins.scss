@@ -76,6 +76,10 @@
   flex-wrap: wrap;
 }
 
+@mixin section-wrapper-padding {
+  padding: 2rem 3vw 3rem 3vw;
+}
+
 // Responsive
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
@@ -84,5 +88,3 @@
     }
   }
 }
-
-// @mixin respon

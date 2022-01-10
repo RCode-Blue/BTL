@@ -2,6 +2,8 @@ import React from "react";
 
 import FetchHeroImage from "../../queries/fetchHeroImage";
 import HeroImage from "./heroImage";
+import HowItWorks from "./howItWorks";
+import OurTools from "./ourTools";
 
 const HomeContents = () => {
   const data = FetchHeroImage();
@@ -10,6 +12,8 @@ const HomeContents = () => {
   return (
     <div>
       <HeroImage data={imgData} />
+      <HowItWorks />
+      <OurTools />
     </div>
   );
 };
