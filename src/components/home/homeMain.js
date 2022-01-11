@@ -3,7 +3,7 @@ import React from "react";
 import HomeHeader from "./homeHeader";
 import HomeContents from "./homeContents";
 
-const HomeLayout = () => {
+const HomeMain = () => {
   return (
     <div>
       <HomeHeader />
@@ -12,4 +12,4 @@ const HomeLayout = () => {
   );
 };
 
-export default HomeLayout;
+export default HomeMain;

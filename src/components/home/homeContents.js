@@ -4,6 +4,7 @@ import FetchHeroImage from "../../queries/fetchHeroImage";
 import HeroImage from "./heroImage";
 import HowItWorks from "./howItWorks";
 import OurTools from "./ourTools";
+import Events from "./events";
 
 const HomeContents = () => {
   const data = FetchHeroImage();
@@ -14,6 +15,7 @@ const HomeContents = () => {
       <HeroImage data={imgData} />
       <HowItWorks />
       <OurTools />
+      <Events />
     </div>
   );
 };

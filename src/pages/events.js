@@ -1,12 +1,12 @@
 import React from "react";
 
 import MainLayout from "../layouts/mainLayout";
-import HomeMain from "../components/home/homeMain";
+import EventsMain from "../components/events/eventsMain";
 
 function App() {
   return (
     <MainLayout>
-      <HomeMain />
+      <EventsMain />
     </MainLayout>
   );
 }

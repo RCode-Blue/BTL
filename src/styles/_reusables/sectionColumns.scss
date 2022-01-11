@@ -16,3 +16,40 @@
     }
   }
 }
+
+.evtbox {
+  position: relative;
+  &__img {
+    // position: relative;
+    width: 45vw;
+  }
+  &__txt {
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    color: $color-content-light;
+    padding: 2rem;
+    font-family: $font-fam1;
+    font-size: $font-size-section-content;
+    background-color: $color-content-dark-opacity_1;
+    &__title {
+      padding-bottom: 5rem;
+      font-size: $font-size-section-header;
+    }
+    &__date {
+      // position: absolute;
+      padding-bottom: 2rem;
+    }
+    &__btn {
+      // position: absolute;
+      padding: 1rem 15rem 1rem 1rem;
+
+      &__txt {
+        padding: 1rem;
+        border: 1px solid $color-content-light;
+        text-align: center;
+        font-size: $font-size-section-button;
+      }
+    }
+  }
+}

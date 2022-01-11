@@ -18,7 +18,7 @@ const TopNav = () => {
           <Link to="/events">Events</Link>
         </div>
         <div>
-          <Link to="/join">Join Us</Link>
+          <Link to="/blogs">Blogs</Link>
         </div>
         <div>
           <Link to="/about">About Us</Link>

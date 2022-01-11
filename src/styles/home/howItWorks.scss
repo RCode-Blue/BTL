@@ -6,10 +6,21 @@
   background-color: $color-content-light;
 }
 
+// .how-content {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   &__col {
+//     padding: 4rem;
+//   }
+// }
+
 .how-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   &__col {
-    padding: 4rem;
+    max-width: 30rem;
+    min-width: 20rem;
   }
 }

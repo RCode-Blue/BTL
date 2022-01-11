@@ -9,6 +9,7 @@ import "../../styles/home/heroImage.scss";
 
 const ImageUnderlay = (data) => {
   const { gatsbyImageData, description } = data.data.image;
+
   const heroText =
     "Sharing resources and skills to enhance the resilience of communities";
   const btnString = "Become a member";

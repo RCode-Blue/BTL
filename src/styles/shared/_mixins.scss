@@ -80,6 +80,18 @@
   padding: 2rem 3vw 3rem 3vw;
 }
 
+@mixin section-wrapper-padding-dark {
+  padding: 2rem 3vw 3rem 3vw;
+  color: $color-content-light;
+  background-color: $color-content-dark;
+}
+
+@mixin section-wrapper-padding-light {
+  padding: 2rem 3vw 3rem 3vw;
+  color: $color-content-dark;
+  background-color: $color-content-light;
+}
+
 // Responsive
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
