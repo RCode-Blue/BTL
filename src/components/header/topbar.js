@@ -1,11 +1,11 @@
 import React from "react";
 
-import BtlLogo from "../components/header/btlLogo";
-import TopNav from "../components/header/topNav";
+import BtlLogo from "./btlLogo";
+import TopNav from "./topNav";
 
-import "../styles/headerLayout.scss";
+import "../../styles/headerLayout.scss";
 
-const HeaderLayout = () => {
+const TopBar = () => {
   return (
     <div className="header">
       <div className="header__wrapper">
@@ -18,4 +18,4 @@ const HeaderLayout = () => {
   );
 };
 
-export default HeaderLayout;
+export default TopBar;

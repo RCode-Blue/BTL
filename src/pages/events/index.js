@@ -1,7 +1,7 @@
 import React from "react";
 
-import MainLayout from "../layouts/mainLayout";
-import EventsMain from "../components/events/eventsMain";
+import MainLayout from "../../layouts/mainLayout";
+import EventsMain from "../../components/events/eventsMain";
 
 function App() {
   return (

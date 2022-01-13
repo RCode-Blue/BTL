@@ -4,6 +4,7 @@
   "description": "Brisbane Tool Library website refresh",
   "main": "index.js",
   "scripts": {
+    "dev": "clear && gatsby clean && gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gatsby develop",
     "build": "gatsby build"
