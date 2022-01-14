@@ -8,7 +8,7 @@ import { EventHeader } from "../../components/_reusables/article/articleHeader";
 import EventBody from "../../components/_reusables/article/eventBody";
 
 const Event = (props) => {
-  console.log(props.data);
+  // console.log(props.data);
 
   // const {
   //   id: eventId,
@@ -62,7 +62,11 @@ export const query = graphql`
       eventDuration
       eventImageBanner {
         image {
-          gatsbyImageData(placeholder: TRACED_SVG)
+          gatsbyImageData(
+            placeholder: TRACED_SVG
+            resizingBehavior: SCALE
+            cropFocus: CENTER
+          )
           description
           title
         }

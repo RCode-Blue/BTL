@@ -1,26 +1,32 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import "../../../styles/_reusables/eventBody.sass";
+import EventDetails from "./eventDetails";
+
+import "../../../styles/_reusables/eventBody.scss";
 
 // import HeaderLayout from "../../../layouts/headerLayout";
 // import FooterLayout from "../../../layouts/footerLayout";
 
 const renderEventContents = (data) => {
-  console.log(data);
+  // console.log(data);
   // console.log(data.eventImageBanner.image.gatsbyImageData);
 
   const image = data.eventImageBanner.image.gatsbyImageData;
   const desc = data.eventImageBanner.image.description;
+  const title = data.eventTitle;
 
   return (
-    <div className="article-wrapper">
-      <div className="article-image">
-        <GatsbyImage image={image} alt={desc} />
+    <div className="event-wrapper">
+      <div className="event-image">
+        <GatsbyImage className="event-image__img" image={image} alt={desc} />
       </div>
 
-      <div>ARTICLE TITLE</div>
-      <div>ARTICLE CONTENTS</div>
+      <div className="event-title">{title}</div>
+      <div className="event-details">Event Details</div>
+      <EventDetails data={data.eventDescription} />
+
+      <div className="event-desc">Event CONTENTS</div>
     </div>
   );
 };
