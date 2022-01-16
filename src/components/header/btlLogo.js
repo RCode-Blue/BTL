@@ -4,8 +4,8 @@ import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import FetchBtlLogo from "../../queries/fetchBtlLogo";
 
-import "../../styles/main.scss";
-import "../../styles/btlLogo.scss";
+// import "../../styles/btlLogo.scss";
+import "../../styles/allStyles.scss";
 
 const RenderBtlLogo = (data) => {
   const imgData = data.data.allContentfulLogo.edges[0].node.image;

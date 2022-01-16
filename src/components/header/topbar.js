@@ -3,7 +3,8 @@ import React from "react";
 import BtlLogo from "./btlLogo";
 import TopNav from "./topNav";
 
-import "../../styles/headerLayout.scss";
+// import "../../styles/headerLayout.scss";
+import "../../styles/allStyles.scss";
 
 const TopBar = () => {
   return (

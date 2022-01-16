@@ -1,7 +1,7 @@
 import React from "react";
 
 import subHeader from "../_reusables/subheader/subHeader";
-import subNavLinks from "./subNavLinks";
+// import subNavLinks from "./subNavLinks";
 
 const HomeHeader = () => {
   const renderSubheading = (title) => {

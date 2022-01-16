@@ -92,6 +92,19 @@
   background-color: $color-content-light;
 }
 
+@mixin article-wrapper-padding-light {
+  padding: 4rem 10vw 6rem 10vw;
+  color: $color-content-dark;
+  background-color: $color-content-light;
+}
+
+// Rich Text
+@mixin richtext-std {
+  font-family: $font-fam1;
+  font-size: $font-size-section-content;
+  color: $color-content-dark;
+}
+
 // Responsive
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {

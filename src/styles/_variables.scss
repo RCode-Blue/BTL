@@ -1,5 +1,6 @@
 // FONT IMPORT
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
 
 // DIMENSIONS
@@ -44,7 +45,7 @@ $color-topnav-selected-text: #f8e8c2;
 // FONTS - FAMILY
 $font-fam1: "DM Sans";
 $font-fam1-backup1: "Arial";
-$font-fam1-backup2: "Verdana";
+$font-fam1-backup2: "sans-serif";
 
 $font-fam2: "DM Mono";
 
@@ -66,6 +67,7 @@ $font-size-hero-button_tab: 1.6rem;
 $font-size-hero-button_mob: 1.4rem;
 
 $font-size-section-header: 3rem;
+$font-size-subsection-header: 2.8rem;
 
 $font-size-section-content: 2rem;
 $font-size-section-icolabel: 2rem;

@@ -4,7 +4,7 @@ const query = graphql`
   {
     allContentfulEvent(
       sort: { fields: eventStart, order: ASC }
-      limit: 2
+      limit: 6
       filter: { eventStart: { gte: "$date" } }
     ) {
       nodes {

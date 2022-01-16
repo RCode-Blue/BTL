@@ -1,0 +1,15 @@
+@import "./_variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: $font-fam1;
+  font-size: 62.5%;
+}

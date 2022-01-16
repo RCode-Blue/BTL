@@ -1,12 +1,13 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import "../../../styles/_reusables/sectionColumns.scss";
+// import "../../../styles/_reusables/sectionColumns.scss";
+import "../../../styles/allStyles.scss";
 
 // Home > How it Works > Text column
 const TextCol = (text) => {
   const { txt } = text;
-  return <div className="iconcol__text">{txt}</div>;
+  return <div className="section-col-icon__text">{txt}</div>;
 };
 
 // Home > How it Works > Icon column
@@ -16,13 +17,18 @@ const IconColHome = (ico) => {
   const desc = icon.description;
 
   return (
-    <div className="iconcol__img">
-      <GatsbyImage className="iconcol__img__ico" alt={desc} image={image} />
-      <div className="iconcol__img__label">{label}</div>
+    <div className="section-col-icon__img">
+      <GatsbyImage
+        className="section-iconcol__img__icon"
+        alt={desc}
+        image={image}
+      />
+      <div className="section-col-icon__img__label">{label}</div>
     </div>
   );
 };
 
+/*
 // Home > Events - Event box
 const EventBox = (data) => {
   // Home > Events - Event box - Image underlay
@@ -60,5 +66,6 @@ const EventBox = (data) => {
     </div>
   );
 };
+*/
 
-export { TextCol, IconColHome, EventBox };
+export { TextCol, IconColHome };

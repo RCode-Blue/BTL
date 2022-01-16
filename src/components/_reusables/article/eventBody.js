@@ -1,15 +1,18 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
+import EventDescription from "./eventDescription";
 import EventDetails from "./eventDetails";
 
-import "../../../styles/_reusables/eventBody.scss";
+// import "../../../styles/_reusables/eventBody.scss";
+import "../../../styles/allStyles.scss";
 
 // import HeaderLayout from "../../../layouts/headerLayout";
 // import FooterLayout from "../../../layouts/footerLayout";
 
 const renderEventContents = (data) => {
   // console.log(data);
+
   // console.log(data.eventImageBanner.image.gatsbyImageData);
 
   const image = data.eventImageBanner.image.gatsbyImageData;
@@ -18,38 +21,15 @@ const renderEventContents = (data) => {
 
   return (
     <div className="event-wrapper">
-      <div className="event-image">
-        <GatsbyImage className="event-image__img" image={image} alt={desc} />
-      </div>
-
+      <GatsbyImage className="event-image" image={image} alt={desc} />
       <div className="event-title">{title}</div>
-      <div className="event-details">Event Details</div>
-      <EventDetails data={data.eventDescription} />
-
-      <div className="event-desc">Event CONTENTS</div>
+      <EventDetails data={data} />
+      <EventDescription data={data.eventDescription} />
     </div>
   );
 };
 
 const EventBody = (data) => {
-  // console.log(data.data);
-
-  // const {
-  //   id: eventId,
-  //   eventTitle: title,
-  //   onLineEvent: isOnline,
-  //   inPersonEvent: isInPerson,
-  //   seminar: isSeminar,
-  //   workshop: isWorkshop,
-  //   slug,
-  //   updatedAt,
-  //   eventStart,
-  //   eventImage: image,
-  //   eventImageBanner: bannerImage,
-  //   eventDescription: description,
-  //   eventDuration: duration,
-  // } = data.data;
-
   return <div className="">{renderEventContents(data.data)}</div>;
 };
 

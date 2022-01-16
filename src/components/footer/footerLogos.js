@@ -3,7 +3,8 @@ import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import FetchFooterLogos from "../../queries/fetchLogos";
 
-import "../../styles/footer/footerLogos.scss";
+// import "../../styles/footer/footerLogos.scss";
+import "../../styles/allStyles.scss";
 
 const RenderLogos = (data) => {
   return (
@@ -13,7 +14,7 @@ const RenderLogos = (data) => {
         const image = getImage(node.image.gatsbyImageData);
         // console.log(node);
         return (
-          <div key={imgId} className="logo">
+          <div key={imgId} className="footerlogos__govcrest">
             <GatsbyImage image={image} alt={node.image.title} />
           </div>
         );

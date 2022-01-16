@@ -1,7 +1,7 @@
 @import "./shared/_variables.scss";
 @import "./shared//mixins";
 
-.subtitle {
+.subheader-subtitle {
   // border-bottom: 0.5rem solid $color-header-light;
   // display: inline-block;
 
@@ -17,7 +17,7 @@
   }
 }
 
-.subnav {
+.subheader-subnav {
   @include nav-bar-structure;
   justify-content: center;
   font-size: $font-size-subnav;
@@ -28,7 +28,7 @@
   }
 }
 
-.subHeader-wrapper {
+.subheader-wrapper {
   background-color: $color-header-dark;
   padding: 2rem 0;
 }
