@@ -9,7 +9,7 @@ const query = graphql`
     ) {
       nodes {
         eventDuration
-        eventStart(formatString: "MMMM Do, YYYY")
+        eventStart(formatString: "YYYY-MM-DD hh:mm")
         eventTitle
         id
         eventLocation {
@@ -41,9 +41,9 @@ const query = graphql`
   }
 `;
 
-const LatestEvents = () => {
+const allEvents = () => {
   const data = useStaticQuery(query);
   return data;
 };
 
-export default LatestEvents;
+export default allEvents;

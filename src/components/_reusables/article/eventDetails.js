@@ -12,7 +12,7 @@ const renderEventCategories = (data) => {
   } = data.data;
 
   return (
-    <div className="evtdetails__categories">
+    <div className="eventpage-article__details__categories">
       {isOnline ? <div>Online</div> : <div></div>}
       {isInperson ? <div>In-Person</div> : <div></div>}
       {isSeminar ? <div>Seminar</div> : <div></div>}
@@ -24,7 +24,7 @@ const renderEventCategories = (data) => {
 const renderEvtTimes = (data) => {
   const { eventStart: start, eventDuration: duration } = data.data;
   return (
-    <div className="evtdetails__times">
+    <div className="eventpage-article__details__times">
       <div className="">{start}</div>
       <div className="">{duration}</div>
     </div>
@@ -33,8 +33,8 @@ const renderEvtTimes = (data) => {
 
 const EventDetails = (data) => {
   return (
-    <div className="evtdetails-wrapper">
-      <div className="evtdetails">
+    <div className="eventpage-article__details-wrapper">
+      <div className="eventpage-article__details">
         {renderEventCategories(data)}
         {renderEvtTimes(data)}
       </div>

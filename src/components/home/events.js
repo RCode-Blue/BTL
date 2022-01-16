@@ -1,18 +1,27 @@
 import React from "react";
 
+import filterFutureEvents from "../../scripts/filterFutureEvents";
+
 // import "../../styles/home/events.scss";
 
-// import { EventBox } from "../_reusables/contentSection/sectionColumns";
 import EventBox from "../_reusables/event/eventBox";
 import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
 
-import latestEvents from "../../queries/fetchEventsLimited";
+import AllEvents from "../../queries/fetchAllEvents";
 
 const Events = () => {
-  const events = latestEvents();
+  const events = AllEvents();
 
-  const node0 = events.allContentfulEvent.nodes[0];
-  const node1 = events.allContentfulEvent.nodes[1];
+  // const graphQLDate = graphQLStart.slice(0, 10);
+  // const graphQLTime = graphQLStart.substr(11, 5);
+  // const dateString = graphQLDate + " " + graphQLTime;
+  // const anotherDay = moment.tz(dateString, "Australia/Brisbane");
+
+  const allEvents = events.allContentfulEvent.nodes;
+
+  const futureEvents = filterFutureEvents(allEvents);
+  const node0 = futureEvents[0];
+  const node1 = futureEvents[1];
   const headerText = "Events";
 
   return (

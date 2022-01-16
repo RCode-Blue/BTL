@@ -10,7 +10,11 @@ const EventDescription = (data) => {
 
   const options = richTextOptions();
 
-  return <div className="">{renderRichText(data.data, options)}</div>;
+  return (
+    <div className="eventpage-article__description">
+      {renderRichText(data.data, options)}
+    </div>
+  );
 };
 
 export default EventDescription;
