@@ -1,0 +1,96 @@
+@use "./mixins";
+
+@import "./base";
+@import "./variables";
+
+// == /home ==
+/* #region */
+
+.hero-image-wrapper {
+  position: relative;
+  text-align: center;
+  color: $color-content-light;
+  font-size: 5rem;
+  background-color: $color-content-dark;
+  > div {
+    > picture {
+      > img {
+        filter: brightness(70%);
+      }
+    }
+  }
+}
+
+.textbox {
+  padding: 2rem;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+
+  background-color: $color-content-dark-opacity_1;
+
+  max-width: 40rem;
+
+  &__text {
+    font-size: $font-size-hero-text;
+    margin-bottom: 2rem;
+
+    @include mixins.respond-to("wscr") {
+      font-size: $font-size-hero-text_wscr;
+    }
+
+    @include mixins.respond-to("lap") {
+      font-size: $font-size-hero-text_lap;
+    }
+
+    @include mixins.respond-to("tab") {
+      font-size: $font-size-hero-text_tab;
+      margin-bottom: 1rem;
+    }
+
+    @include mixins.respond-to("mob") {
+      font-size: $font-size-hero-text_mob;
+    }
+  }
+  &__button {
+    padding: 1% 20%;
+    &__contents {
+      border: solid 0.5px $color-content-light;
+      // margin: 20%;
+
+      font-size: $font-size-hero-button;
+
+      @include mixins.respond-to("wscr") {
+        font-size: $font-size-hero-button_wscr;
+      }
+
+      @include mixins.respond-to("lap") {
+        font-size: $font-size-hero-button_lap;
+      }
+
+      @include mixins.respond-to("tab") {
+        font-size: $font-size-hero-button_tab;
+      }
+
+      @include mixins.respond-to("mob") {
+        font-size: $font-size-hero-button_mob;
+      }
+
+      @include mixins.nav-element-styling;
+      @include mixins.nav-element-styling__lighttxt;
+    }
+  }
+}
+
+.home-section-events-wrapper {
+  @include mixins.section-wrapper-padding-light;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-section-eventsbox {
+}
+
+/* #endregion */

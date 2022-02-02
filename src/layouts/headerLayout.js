@@ -4,7 +4,7 @@ import BtlLogo from "../components/header/btlLogo";
 import TopNav from "../components/header/topNav";
 
 // import "../styles/headerLayout.scss";
-import "../styles/allStyles.scss";
+// import "../styles/allStyles.scss";
 
 const HeaderLayout = () => {
   return (

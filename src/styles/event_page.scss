@@ -1,0 +1,55 @@
+@use "./mixins";
+
+@import "./base";
+@import "./variables";
+
+// == /events/<title>_<id> -> single event page
+/* #region */
+.eventpage-wrapper {
+  @include mixins.section-wrapper-padding;
+  @include mixins.section-wrapper-padding-light;
+}
+
+.eventpage-article {
+  &__image {
+    max-height: 50rem;
+    height: 50vh;
+  }
+  &__title {
+    padding: 4rem;
+    font-size: $font-size-section-header;
+    text-align: center;
+  }
+
+  &__details-wrapper {
+    margin: auto;
+    padding: 4rem;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    font-size: $font-size-footer;
+    &__categories,
+    &__times {
+      padding: 2rem;
+      display: flex;
+      flex-direction: row;
+      > div {
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  &__description {
+    font-size: $font-size-section-content;
+    > ul {
+      padding: 4rem;
+    }
+    > h3 {
+      padding-top: 2rem;
+    }
+  }
+}
+
+/* #endregion */

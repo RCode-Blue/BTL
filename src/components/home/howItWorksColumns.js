@@ -3,7 +3,7 @@ import React from "react";
 
 import fetchHowItWorksIcons from "../../queries/fetchHowItWorksIcons";
 // import "../../styles/home/howItWorks.scss";
-import "../../styles/allStyles.scss";
+// import "../../styles/allStyles.scss";
 import {
   TextCol,
   IconColHome,
@@ -17,18 +17,18 @@ const HowItWorksColumns = () => {
   const sampleTxt = sample.lorem();
 
   return (
-    <div className="home-howitworks-content-wrapper">
-      <div className="home-howitworks-content">
-        <div className="home-howitworks-content__col">
+    <div className="section-content-wrapper section-content-wrapper__light">
+      <div className="section-cols-4">
+        <div>
           <TextCol txt={sampleTxt} />
         </div>
-        <div className="home-howitworks-content__col">
+        <div>
           <IconColHome iconData={iconsData.nodes[0]} />
         </div>
-        <div className="home-howitworks-content__col">
+        <div>
           <IconColHome iconData={iconsData.nodes[1]} />
         </div>
-        <div className="home-howitworks-content__col">
+        <div>
           <IconColHome iconData={iconsData.nodes[2]} />
         </div>
       </div>

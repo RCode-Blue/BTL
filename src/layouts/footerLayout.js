@@ -5,7 +5,7 @@ import FooterIcons from "../components/footer/footerIcons";
 import FooterLogos from "../components/footer/footerLogos";
 
 // import "../styles/footer/footerLayout.scss";
-import "../styles/allStyles.scss";
+// import "../styles/allStyles.scss";
 
 const FooterLayout = () => {
   return (

@@ -1,0 +1,65 @@
+@use "./mixins";
+
+@import "./base";
+@import "./variables";
+
+// == Footer ==
+/* #region */
+.footer {
+  background-color: $color-header-dark;
+  width: 100%;
+  font-size: $font-size-footer;
+  &__wrapper {
+    @include mixins.header-footer-wrapper-positioning;
+    color: $color-header-light;
+  }
+
+  &__bottom {
+    @include mixins.footer-bottom-elements;
+    justify-content: space-around;
+    margin: auto;
+    max-width: $inner-width-max;
+  }
+}
+
+.footer-nav {
+  @include mixins.nav-bar-structure;
+  justify-content: center;
+
+  > div {
+    @include mixins.nav-element-styling;
+    @include mixins.nav-element-styling__lighttxt;
+  }
+}
+
+.footer-content {
+  max-width: $inner-width-max;
+  margin: auto;
+  padding: 2rem 0;
+  > p {
+    text-align: justify;
+  }
+}
+
+.footericons-wrapper {
+  margin: auto;
+}
+
+.footericons-bar {
+  @include mixins.nav-bar-structure;
+  > div {
+    padding: 1rem;
+  }
+}
+
+.footerlogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__govcrest {
+    max-width: 15rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* #endregion */

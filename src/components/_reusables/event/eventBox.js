@@ -9,7 +9,7 @@ const EventBox = (data) => {
   // console.log(data);
   // Home > Events - Event box - Image underlay
   const renderEventBoxSubImg = (data) => {
-    console.log(data);
+    // console.log(data);
     const image = data.node.eventImage.image.gatsbyImageData;
     const desc = data.node.eventImage.image.description;
     // const urlString = "/events/" + data.node.slug + "_" + data.node.id;

@@ -1,0 +1,51 @@
+@use "./mixins";
+
+@import "./base";
+@import "./variables";
+
+// == Header ==
+/* #region */
+
+.header {
+  background-color: $color-header-light;
+  &__wrapper {
+    max-width: $outer-width-max;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__bar {
+    @include mixins.nav-bar-structure;
+    justify-content: space-between;
+  }
+}
+
+.topnav-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.topnav-bar {
+  font-size: $font-size-topnav;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  & > div {
+    @include mixins.nav-element-styling;
+    @include mixins.nav-element-styling__darktxt;
+
+    padding: 1rem;
+  }
+}
+
+.btllogo-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2rem 5rem 2rem 0;
+}
+
+.btl-logo {
+  max-width: 20rem;
+}
+/* #endregion */
