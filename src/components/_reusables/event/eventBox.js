@@ -9,6 +9,7 @@ const EventBox = (data) => {
   // console.log(data);
   // Home > Events - Event box - Image underlay
   const renderEventBoxSubImg = (data) => {
+    console.log(data);
     const image = data.node.eventImage.image.gatsbyImageData;
     const desc = data.node.eventImage.image.description;
     // const urlString = "/events/" + data.node.slug + "_" + data.node.id;
@@ -27,7 +28,7 @@ const EventBox = (data) => {
     const node = data.node;
     // console.log(node);
     const { eventTitle, eventStart, slug, id } = data.node;
-    const urlString = "/events/" + slug + "_" + id + `%7D`;
+    const urlString = "/events/" + slug + "_" + id + `}`;
     return (
       <div className="eventbox__textsection">
         <div className="eventbox__textsection__title">{eventTitle}</div>

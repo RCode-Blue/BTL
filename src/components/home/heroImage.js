@@ -3,7 +3,6 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import TextBox from "./heroTextBox";
 
-// import "../../styles/home/heroImage.scss";
 import "../../styles/allStyles.scss";
 
 // Requires gatsbyImageData and description of image

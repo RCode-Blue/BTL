@@ -11,8 +11,9 @@ import "../../../styles/allStyles.scss";
 // import FooterLayout from "../../../layouts/footerLayout";
 
 const renderEventContents = (data) => {
-  const image = data.eventImageBanner.image.gatsbyImageData;
-  const desc = data.eventImageBanner.image.description;
+  console.log(data);
+  const image = data.eventImage.image.gatsbyImageData;
+  const desc = data.eventImage.image.description;
   const title = data.eventTitle;
 
   return (

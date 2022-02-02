@@ -29,7 +29,7 @@
   "prettier.configPath": ".prettierrc.json",
   "prettier.requireConfig": true,
 
-  "semi": true,
+  
 
   "window.zoomLevel": 1,
 

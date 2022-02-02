@@ -38,17 +38,6 @@ export const query = graphql`
         raw
       }
       eventDuration
-      eventImageBanner {
-        image {
-          gatsbyImageData(
-            placeholder: TRACED_SVG
-            resizingBehavior: SCALE
-            cropFocus: CENTER
-          )
-          description
-          title
-        }
-      }
     }
   }
 `;
