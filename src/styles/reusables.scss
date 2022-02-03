@@ -122,12 +122,16 @@
   position: relative;
   &__image {
     // position: relative;
-    width: 45vw;
+    // width: 45vw;
+    max-width: 100%;
+    padding: 1rem;
+    object-fit: cover;
   }
   &__textsection {
+    width: 70%;
     position: absolute;
-    top: 3rem;
-    left: 4rem;
+    top: 8%;
+    left: 8%;
     color: $color-content-light;
     padding: 2rem;
     font-family: $font-fam1;
@@ -144,11 +148,12 @@
     &__button {
       // position: absolute;
       background-color: $color-content-dark-opacity_1;
-
       padding: 1rem;
       @include mixins.nav-element-styling;
       @include mixins.nav-element-styling__lighttxt;
-      font-size: $font-size-section-button &__link {
+      font-size: $font-size-section-button;
+
+      &__link {
         // border: 1px solid $color-content-light;
         text-align: center;
         font-size: $font-size-section-button;

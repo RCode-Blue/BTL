@@ -9,7 +9,7 @@ const query = graphql`
     ) {
       nodes {
         eventDuration
-        eventStart(formatString: "YYYY-MM-DD hh:mm")
+        eventStart
         eventTitle
         id
         eventLocation {

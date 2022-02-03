@@ -81,13 +81,13 @@
 }
 
 @mixin section-wrapper-padding-dark {
-  padding: 2rem 3vw 3rem 3vw;
+  padding: 2rem;
   color: $color-content-light;
   background-color: $color-content-dark;
 }
 
 @mixin section-wrapper-padding-light {
-  padding: 2rem 3vw 3rem 3vw;
+  padding: 2rem;
   color: $color-content-dark;
   background-color: $color-content-light;
 }

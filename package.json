@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "clear && gatsby clean",
-    "gatsbydev":"gatsby develop",
+    "gatsbydev": "gatsby develop",
     "dev": "npm-run-all clean gatsbydev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gatsby build"
@@ -38,6 +38,7 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.11.1",
     "@contentful/rich-text-types": "^15.11.1",
+    "dayjs": "^1.10.7",
     "gatsby": "^4.4.0",
     "gatsby-background-image": "^1.6.0",
     "gatsby-image": "^3.11.0",
