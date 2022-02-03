@@ -12,7 +12,7 @@ import AllEvents from "../../queries/fetchAllEvents";
 const Events = () => {
   const events = AllEvents();
 
-  console.log(events);
+  // console.log(events);
 
   // const graphQLDate = graphQLStart.slice(0, 10);
   // const graphQLTime = graphQLStart.substr(11, 5);
