@@ -198,6 +198,7 @@
       }
       @include mixins.respond-to("mobile") {
         display: block;
+        font-size: $font-size-section-header_mobile;
       }
     }
 
