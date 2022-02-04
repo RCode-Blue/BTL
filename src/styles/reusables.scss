@@ -14,6 +14,13 @@
     font-size: $font-size-section-header;
     background-color: $color-content-dark;
     color: $color-content-light;
+    @include mixins.respond-to("tablet") {
+      font-size: $font-size-section-header_tablet;
+    }
+    @include mixins.respond-to("mobile") {
+      padding-bottom: 1rem;
+      font-size: $font-size-section-header_mobile;
+    }
   }
   &__light {
     @include mixins.section-wrapper-padding;
@@ -21,6 +28,13 @@
     font-size: $font-size-section-header;
     background-color: $color-content-light;
     color: $color-content-dark;
+    @include mixins.respond-to("tablet") {
+      font-size: $font-size-section-header_tablet;
+    }
+    @include mixins.respond-to("mobile") {
+      padding-bottom: 1rem;
+      font-size: $font-size-section-header_mobile;
+    }
   }
 }
 
@@ -37,6 +51,9 @@
 
 .section-content-wrapper {
   @include mixins.section-wrapper-padding;
+  @include mixins.respond-to("mobile") {
+    padding-bottom: 0;
+  }
   &__light {
     background-color: $color-content-light;
   }
@@ -72,7 +89,9 @@
     min-width: 10rem;
     display: inline-block;
     @include mixins.respond-to("mobile") {
-      min-width: 7rem;
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+      min-width: 7.5rem;
     }
 
     &__icon {
