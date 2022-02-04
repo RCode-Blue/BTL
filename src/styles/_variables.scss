@@ -1,9 +1,12 @@
 // FONT IMPORT
+/* #region */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
+/* #endregion */
 
 // DIMENSIONS
+/* #region */
 $outer-width-max: 120rem; // For Top Bar and Footer
 
 $inner-width-max: 100rem; // For Content Sections
@@ -23,8 +26,10 @@ $menugroup-padding-tb: 1rem;
 $horbar-padding-tb: 1rem;
 
 $section-padding-tb: 1rem;
+/* #endregion */
 
 // COLOURS
+/* #region */
 $color-ivory1: #fcf3dd;
 $color-ivory2: #f8e8c2;
 
@@ -38,19 +43,23 @@ $color-content-light: #fcf3dd;
 $color-content-dark: #3f4852;
 $color-content-transparent: rgba(255, 255, 255, 0);
 $color-content-dark-opacity_1: rgba(62, 71, 81, 0.5);
-$color-content-dark-opacity_2: rgba(62, 71, 81, 0.8);
+$color-content-dark-opacity_2: rgba(45, 52, 60, 0.9);
 
 $color-topnav-selected-bg: #2d343c;
 $color-topnav-selected-text: #f8e8c2;
+/* #endregion */
 
 // FONTS - FAMILY
+/* #region */
 $font-fam1: "DM Sans";
 $font-fam1-backup1: "Arial";
 $font-fam1-backup2: "sans-serif";
 
 $font-fam2: "DM Mono";
+/* #endregion */
 
 // FONTS - SIZES
+/* #region */
 $font-size-topnav: 2.2rem;
 $font-size-topnav_tablet: 2rem;
 $font-size-topnav_mobile: 1.2rem;
@@ -78,7 +87,7 @@ $font-size-hero-button_mobile: 1.4rem;
 
 $font-size-section-header: 3rem;
 $font-size-section-header_monitor: 2.5rem;
-$font-size-section-header_tablet: 2rem;
+$font-size-section-header_tablet: 1.8rem;
 $font-size-subsection-header: 2.8rem;
 
 $font-size-section-content: 1.8rem;
@@ -91,8 +100,16 @@ $font-size-section-button_monitor: 1.4rem;
 $font-size-section-button_tablet: 1.2rem;
 
 $font-size-footer: 1.6rem;
+/* #endregion */
+
+// Event Box
+/* #region */
+$eventbox-image-height_tablet: 18rem;
+$eventbox-image-height_mobile: 16rem;
+/* #endregion */
 
 // Breakpoints
+/* #region */
 // extra large screen: >1200px | wide screen: 1200px | laptop (1024px) | tablet (768px) | Mobile (480px)
 $breakpoints: (
   "widescreen": 1200px,
@@ -102,3 +119,4 @@ $breakpoints: (
   // "mobile": 620px,
   "mobile": 480px,
 ) !default;
+/* #endregion */

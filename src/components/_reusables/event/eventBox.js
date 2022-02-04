@@ -18,7 +18,7 @@ const EventBox = (data) => {
     const desc = data.node.eventImage.image.description;
     return (
       <div className="eventbox__image">
-        <GatsbyImage className="" image={image} alt={desc} />
+        <GatsbyImage className="eventimage" image={image} alt={desc} />
       </div>
     );
   };
@@ -40,12 +40,17 @@ const EventBox = (data) => {
     return (
       <div className="eventbox__textsection">
         <div className="eventbox__textsection__title">{eventTitle}</div>
-        <div className="eventbox__textsection__date">{eventDayTime}</div>
-        <button className="eventbox__textsection__button">
-          <Link className="eventbox__textsection__button__link" to={urlString}>
-            Details
-          </Link>
-        </button>
+        <div className="eventbox__textsection__content">
+          <div className="eventbox__textsection__date">{eventDayTime}</div>
+          <button className="eventbox__textsection__button">
+            <Link
+              className="eventbox__textsection__button__link"
+              to={urlString}
+            >
+              Details
+            </Link>
+          </button>
+        </div>
       </div>
     );
   };

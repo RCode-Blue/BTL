@@ -5,46 +5,6 @@
 
 // == Reusables ==
 
-// Subheader
-/* #region */
-// .subheader-subtitle {
-//   // border-bottom: 0.5rem solid $color-header-light;
-//   // display: inline-block;
-
-//   margin: auto;
-
-//   font-size: $font-size-subheader-title;
-//   color: $color-header-light;
-//   text-align: center;
-//   &__box {
-//     display: inline-block;
-//     padding-bottom: 2rem;
-//     border-bottom: 1px solid $color-header-light;
-//   }
-// }
-
-// .subheader-subnav {
-//   @include mixins.nav-bar-structure;
-//   justify-content: center;
-//   font-size: $font-size-subnav;
-
-//   &__item {
-//     @include mixins.nav-element-styling;
-//     @include mixins.nav-element-styling__lighttxt;
-//   }
-// }
-
-// .subheader-wrapper {
-//   background-color: $color-header-dark;
-//   padding: 2rem 0;
-// }
-
-// .subHeader {
-//   display: flex;
-//   flex-direction: column;
-// }
-/* #endregion */
-
 // Section Header
 /* #region */
 .section-header_wrapper {
@@ -131,6 +91,9 @@
     position: static;
     padding-bottom: 1rem;
   }
+  @include mixins.respond-to("mobile") {
+    // width: 50%;
+  }
 
   &__image {
     // position: relative;
@@ -141,17 +104,13 @@
     @include mixins.respond-to("tablet") {
       position: static;
       padding: 0;
-      height: 10rem;
-      > div {
-        > div {
-          > img {
-            height: 10rem;
-            width: 100%;
-          }
-        }
-      }
+      height: $eventbox-image-height_tablet;
+    }
+    @include mixins.respond-to("mobile") {
+      height: $eventbox-image-height_mobile;
     }
   }
+
   &__textsection {
     width: 70%;
     position: absolute;
@@ -159,7 +118,6 @@
     left: 8%;
     color: $color-content-light;
     padding: 2rem;
-    font-family: $font-fam1;
     font-size: $font-size-section-content;
     background-color: $color-content-dark-opacity_1;
 
@@ -175,9 +133,17 @@
     @include mixins.respond-to("tablet") {
       position: static;
       width: 100%;
+      // margin: 0 1rem;
       padding: 1rem;
       background-color: $color-content-dark-opacity_2;
       font-size: $font-size-section-content_tablet;
+      display: block;
+    }
+
+    @include mixins.respond-to("mobile") {
+      // top: auto;
+      // bottom: auto;
+      // left: auto;
     }
 
     &__title {
@@ -188,21 +154,40 @@
         font-size: $font-size-section-header_monitor;
       }
       @include mixins.respond-to("tablet") {
+        display: block;
+        // padding-left: 1rem;
+        padding-bottom: 0.5rem;
         font-size: $font-size-section-header_tablet;
+        text-align: center;
+      }
+      @include mixins.respond-to("mobile") {
+        display: block;
       }
     }
+
+    &__content {
+      @include mixins.respond-to("tablet") {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // height: 2.5rem;
+        // align-content: center;
+      }
+    }
+
     &__date {
-      // position: absolute;
       padding-bottom: 2rem;
       @include mixins.respond-to("monitor") {
         padding-bottom: 1rem;
       }
       @include mixins.respond-to("tablet") {
-        display: inline-flex;
+        display: block;
+        text-align: center;
+      }
+      @include mixins.respond-to("mobile") {
       }
     }
     &__button {
-      // position: absolute;
       background-color: $color-content-dark-opacity_1;
       padding: 1rem;
       @include mixins.nav-element-styling;
@@ -212,10 +197,14 @@
         padding: 0.8rem;
       }
       @include mixins.respond-to("tablet") {
+        display: block;
+        align-self: center;
+        // margin: auto;
+
         padding: 0.6rem;
-        margin-left: 5vw;
-        display: inline-flex;
-        border: 1px solid $color-content-dark;
+        // margin-left: 5vw;
+        // display: inline-flex;
+        border: 1px solid $color-content-light;
       }
 
       &__link {
@@ -230,6 +219,16 @@
         }
       }
     }
+  }
+}
+
+.eventimage {
+  @include mixins.respond-to("tablet") {
+    height: $eventbox-image-height_tablet;
+    width: 100%;
+  }
+  @include mixins.respond-to("mobile") {
+    height: $eventbox-image-height_mobile;
   }
 }
 /* #endregion */
