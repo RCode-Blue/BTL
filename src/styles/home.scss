@@ -35,20 +35,20 @@
     font-size: $font-size-hero-text;
     margin-bottom: 2rem;
 
-    @include mixins.respond-to("wscr") {
+    @include mixins.respond-to("widescreen") {
       font-size: $font-size-hero-text_wscr;
     }
 
-    @include mixins.respond-to("lap") {
+    @include mixins.respond-to("laptop") {
       font-size: $font-size-hero-text_lap;
     }
 
-    @include mixins.respond-to("tab") {
+    @include mixins.respond-to("tablet") {
       font-size: $font-size-hero-text_tab;
       margin-bottom: 1rem;
     }
 
-    @include mixins.respond-to("mob") {
+    @include mixins.respond-to("mobile") {
       font-size: $font-size-hero-text_mob;
     }
   }
@@ -60,20 +60,20 @@
 
       font-size: $font-size-hero-button;
 
-      @include mixins.respond-to("wscr") {
-        font-size: $font-size-hero-button_wscr;
+      @include mixins.respond-to("widescreen") {
+        font-size: $font-size-hero-button_widescreen;
       }
 
-      @include mixins.respond-to("lap") {
-        font-size: $font-size-hero-button_lap;
+      @include mixins.respond-to("laptop") {
+        font-size: $font-size-hero-button_laptop;
       }
 
-      @include mixins.respond-to("tab") {
-        font-size: $font-size-hero-button_tab;
+      @include mixins.respond-to("tablet") {
+        font-size: $font-size-hero-button_tablet;
       }
 
-      @include mixins.respond-to("mob") {
-        font-size: $font-size-hero-button_mob;
+      @include mixins.respond-to("mobile") {
+        font-size: $font-size-hero-button_mobile;
       }
 
       @include mixins.nav-element-styling;
@@ -91,8 +91,16 @@
 }
 
 .home-section-eventsbox {
-  // min-width: 10rem;
+  min-width: 50rem;
   width: 40vw;
+  @include mixins.respond-to("monitor") {
+    width: 60%;
+    height: 40%;
+  }
+  @include mixins.respond-to("tablet") {
+    // width: 80%;
+    // height: 30rem;
+  }
 }
 
 /* #endregion */

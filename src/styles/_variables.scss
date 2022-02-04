@@ -38,6 +38,7 @@ $color-content-light: #fcf3dd;
 $color-content-dark: #3f4852;
 $color-content-transparent: rgba(255, 255, 255, 0);
 $color-content-dark-opacity_1: rgba(62, 71, 81, 0.5);
+$color-content-dark-opacity_2: rgba(62, 71, 81, 0.8);
 
 $color-topnav-selected-bg: #2d343c;
 $color-topnav-selected-text: #f8e8c2;
@@ -61,25 +62,34 @@ $font-size-hero-text_tab: 2rem;
 $font-size-hero-text_mob: 1.6rem;
 
 $font-size-hero-button: 1.8rem;
-$font-size-hero-button_wscr: 1.8rem;
-$font-size-hero-button_lap: 1.8rem;
-$font-size-hero-button_tab: 1.6rem;
-$font-size-hero-button_mob: 1.4rem;
+$font-size-hero-button_widescreen: 1.8rem;
+$font-size-hero-button_laptop: 1.8rem;
+$font-size-hero-button_tablet: 1.6rem;
+$font-size-hero-button_mobile: 1.4rem;
 
 $font-size-section-header: 3rem;
+$font-size-section-header_monitor: 2.5rem;
+$font-size-section-header_tablet: 2rem;
 $font-size-subsection-header: 2.8rem;
 
 $font-size-section-content: 1.8rem;
+$font-size-section-content_monitor: 1.6rem;
+$font-size-section-content_tablet: 1.4rem;
+
 $font-size-section-icolabel: 2rem;
 $font-size-section-button: 1.6rem;
+$font-size-section-button_monitor: 1.4rem;
+$font-size-section-button_tablet: 1.2rem;
 
 $font-size-footer: 1.6rem;
 
 // Breakpoints
 // extra large screen: >1200px | wide screen: 1200px | laptop (1024px) | tablet (768px) | Mobile (480px)
 $breakpoints: (
-  "wscr": 1200px,
-  "lap": 1024px,
-  "tab": 768px,
-  "mob": 480px,
+  "widescreen": 1200px,
+  "monitor": 1040px,
+  "laptop": 1024px,
+  "tablet": 768px,
+  // "mobile": 620px,
+  "mobile": 480px,
 ) !default;

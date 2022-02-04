@@ -43,7 +43,7 @@ const EventBox = (data) => {
         <div className="eventbox__textsection__date">{eventDayTime}</div>
         <button className="eventbox__textsection__button">
           <Link className="eventbox__textsection__button__link" to={urlString}>
-            Click for details
+            Details
           </Link>
         </button>
       </div>

@@ -1,17 +1,17 @@
 import moment from "moment-timezone";
+import dayjs from "dayjs";
 
-const filterFutureEvents = (allEvents) => {
-  const today = moment();
+const filterPastEvents = (allEvents) => {
+  const now = dayjs();
 
-  let futureEvents = [];
+  let pastEvents = [];
   allEvents.forEach((elem) => {
-    const evtStartMoment = moment.tz(elem.eventStart, "Australia/Brisbane");
-    if (today < evtStartMoment) {
-      elem.momentStart = evtStartMoment;
-      futureEvents.push(elem);
+    const evtStartDay = dayjs(elem.eventStart);
+    if (now > evtStartDay) {
+      pastEvents.push(elem);
     }
   });
   return futureEvents;
 };
 
-export default filterFutureEvents;
+export default filterPastEvents;

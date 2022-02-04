@@ -4,9 +4,9 @@
 @import "./variables";
 
 // == Reusables ==
-/* #region */
 
 // Subheader
+/* #region */
 .subheader-subtitle {
   // border-bottom: 0.5rem solid $color-header-light;
   // display: inline-block;
@@ -43,8 +43,10 @@
   display: flex;
   flex-direction: column;
 }
+/* #endregion */
 
 // Section Header
+/* #region */
 .section-header_wrapper {
   &__dark {
     @include mixins.section-wrapper-padding;
@@ -82,8 +84,10 @@
     background-color: $color-content-dark;
   }
 }
+/* #endregion */
 
 // Section Columns - 4 columns (content)
+/* #region */
 .section-cols-4 {
   display: flex;
   flex-direction: row;
@@ -116,16 +120,37 @@
 
 .section-events-2 {
 }
+/* #endregion */
 
 // Event Box
+/* #region */
 .eventbox {
   position: relative;
+  // width: 100%;
+  @include mixins.respond-to("tablet") {
+    position: static;
+    padding-bottom: 1rem;
+  }
+
   &__image {
     // position: relative;
     // width: 45vw;
     max-width: 100%;
     padding: 1rem;
     object-fit: cover;
+    @include mixins.respond-to("tablet") {
+      position: static;
+      padding: 0;
+      height: 10rem;
+      > div {
+        > div {
+          > img {
+            height: 10rem;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
   &__textsection {
     width: 70%;
@@ -137,13 +162,44 @@
     font-family: $font-fam1;
     font-size: $font-size-section-content;
     background-color: $color-content-dark-opacity_1;
+
+    @include mixins.respond-to("monitor") {
+      // position: absolute;
+      padding: 1rem;
+      top: auto;
+      bottom: 2rem;
+      left: 2rem;
+      font-size: $font-size-section-content_monitor;
+    }
+
+    @include mixins.respond-to("tablet") {
+      position: static;
+      width: 100%;
+      padding: 1rem;
+      background-color: $color-content-dark-opacity_2;
+      font-size: $font-size-section-content_tablet;
+    }
+
     &__title {
       padding-bottom: 5rem;
       font-size: $font-size-section-header;
+      @include mixins.respond-to("monitor") {
+        padding-bottom: 2rem;
+        font-size: $font-size-section-header_monitor;
+      }
+      @include mixins.respond-to("tablet") {
+        font-size: $font-size-section-header_tablet;
+      }
     }
     &__date {
       // position: absolute;
       padding-bottom: 2rem;
+      @include mixins.respond-to("monitor") {
+        padding-bottom: 1rem;
+      }
+      @include mixins.respond-to("tablet") {
+        display: inline-flex;
+      }
     }
     &__button {
       // position: absolute;
@@ -152,17 +208,34 @@
       @include mixins.nav-element-styling;
       @include mixins.nav-element-styling__lighttxt;
       font-size: $font-size-section-button;
+      @include mixins.respond-to("monitor") {
+        padding: 0.8rem;
+      }
+      @include mixins.respond-to("tablet") {
+        padding: 0.6rem;
+        margin-left: 5vw;
+        display: inline-flex;
+        border: 1px solid $color-content-dark;
+      }
 
       &__link {
         // border: 1px solid $color-content-light;
         text-align: center;
         font-size: $font-size-section-button;
+        @include mixins.respond-to("monitor") {
+          font-size: $font-size-section-button_monitor;
+        }
+        @include mixins.respond-to("tablet") {
+          font-size: $font-size-section-button_tablet;
+        }
       }
     }
   }
 }
+/* #endregion */
 
 // Article head
+/* #region */
 .article-head-wrapper {
   background-color: $color-header-light;
 }
@@ -182,5 +255,4 @@
   &__icon {
   }
 }
-
 /* #endregion */

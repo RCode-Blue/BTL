@@ -11,12 +11,6 @@ const filterFutureEvents = (allEvents) => {
     if (now < evtStartDay) {
       futureEvents.push(elem);
     }
-
-    // const evtStartMoment = moment.tz(elem.eventStart, "Australia/Brisbane");
-    // if (today < evtStartMoment) {
-    //   elem.momentStart = evtStartMoment;
-    //   futureEvents.push(elem);
-    // }
   });
   return futureEvents;
 };
