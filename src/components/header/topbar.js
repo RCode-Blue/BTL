@@ -9,7 +9,7 @@ import "../../styles/allStyles.scss";
 const TopBar = () => {
   return (
     <div className="header">
-      <div className="header__wrapper">
+      <div className="header-wrapper">
         <div className="header__bar">
           <BtlLogo />
           <TopNav />

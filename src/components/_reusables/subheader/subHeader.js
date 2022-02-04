@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import "../../../styles/allStyles.scss";
+// import "../../../styles/allStyles.scss";
 
 const renderSubheaderTitle = (title) => {
   return (

@@ -6,16 +6,20 @@
 // == Header ==
 /* #region */
 
+.header-wrapper {
+  max-width: $outer-width-max;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
 .header {
   background-color: $color-header-light;
-  &__wrapper {
-    max-width: $outer-width-max;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   &__bar {
     @include mixins.nav-bar-structure;
     justify-content: space-between;
+    padding: 1rem;
   }
 }
 
@@ -31,11 +35,21 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  word-spacing: -1px;
   & > div {
     @include mixins.nav-element-styling;
     @include mixins.nav-element-styling__darktxt;
 
-    padding: 1rem;
+    padding: 0.5rem 1.4rem;
+    @include mixins.respond-to("tablet") {
+      padding: 0 1rem;
+    }
+  }
+  @include mixins.respond-to("tablet") {
+    font-size: $font-size-topnav_tablet;
+  }
+  @include mixins.respond-to("mobile") {
+    font-size: $font-size-topnav_mobile;
   }
 }
 
@@ -43,6 +57,12 @@
   display: inline-block;
   vertical-align: middle;
   margin: 2rem 5rem 2rem 0;
+  @include mixins.respond-to("laptop") {
+    margin: 1rem 0;
+  }
+  @include mixins.respond-to("tablet") {
+    margin: 0;
+  }
 }
 
 .btl-logo {

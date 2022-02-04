@@ -9,7 +9,7 @@ import TopNav from "../components/header/topNav";
 const HeaderLayout = () => {
   return (
     <div className="header">
-      <div className="header__wrapper">
+      <div className="header-wrapper">
         <div className="header__bar">
           <BtlLogo />
           <TopNav />

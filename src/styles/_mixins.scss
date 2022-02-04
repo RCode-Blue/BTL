@@ -1,5 +1,7 @@
 @import "./_variables.scss";
 
+// header & footer
+/* #region */
 @mixin header-footer-wrapper-positioning {
   max-width: $outer-width-max;
   margin-left: auto;
@@ -7,6 +9,16 @@
   padding: 2rem 3rem;
 }
 
+@mixin footer-bottom-elements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* #endregion */
+
+// navigation
+/* #region */
 @mixin nav-bar-structure {
   // padding: 1em 2em;
   display: flex;
@@ -69,13 +81,10 @@
     color: $color-header-light;
   }
 }
+/* #endregion */
 
-@mixin footer-bottom-elements {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
+// Sections
+/* #region */
 @mixin section-wrapper-padding {
   padding: 1rem 3vw 2rem 3vw;
 }
@@ -91,7 +100,10 @@
   color: $color-content-dark;
   background-color: $color-content-light;
 }
+/* #endregion */
 
+// Articles & text
+/* #region */
 @mixin article-wrapper-padding-light {
   padding: 4rem 10vw 6rem 10vw;
   color: $color-content-dark;
@@ -104,8 +116,10 @@
   font-size: $font-size-section-content;
   color: $color-content-dark;
 }
+/* #endregion */
 
 // Responsive
+/* #region */
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media (max-width: map-get($breakpoints, $breakpoint)) {
@@ -113,3 +127,4 @@
     }
   }
 }
+/* #endregion */

@@ -1,6 +1,6 @@
 @use "./mixins";
 
-@import "./base";
+// @import "./base";
 @import "./variables";
 
 // == Subheader ==
@@ -17,12 +17,34 @@
     padding-bottom: 2rem;
     border-bottom: 1px solid $color-header-light;
   }
+
+  @include mixins.respond-to("laptop") {
+    font-size: $font-size-subheader-title_laptop;
+    &__box {
+      padding-bottom: 1rem;
+    }
+  }
+
+  @include mixins.respond-to("tablet") {
+    font-size: $font-size-subheader-title_tablet;
+  }
+  @include mixins.respond-to("mobile") {
+    font-size: $font-size-subheader-title_mobile;
+  }
 }
 
 .subheader-subnav {
   @include mixins.nav-bar-structure;
   justify-content: center;
   font-size: $font-size-subnav;
+
+  @include mixins.respond-to("tablet") {
+    font-size: $font-size-subnav_tablet;
+  }
+
+  @include mixins.respond-to("mobile") {
+    font-size: $font-size-subnav_mobile;
+  }
 
   &__item {
     @include mixins.nav-element-styling;
@@ -33,6 +55,12 @@
 .subheader-wrapper {
   background-color: $color-header-dark;
   padding: 2rem 0;
+  @include mixins.respond-to("tablet") {
+    padding: 2rem;
+  }
+  @include mixins.respond-to("mobile") {
+    padding: 0.5rem;
+  }
 }
 
 .subHeader {

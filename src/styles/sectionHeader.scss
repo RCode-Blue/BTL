@@ -1,16 +1,19 @@
-@import "../shared/variables";
-@import "../shared/mixins";
+@use "./mixins";
 
+@import "./variables";
+
+// Section Header
+/* #region */
 .section-header_wrapper {
   &__dark {
-    @include section-wrapper-padding;
+    @include mixins.section-wrapper-padding;
     font-family: $font-fam1;
     font-size: $font-size-section-header;
     background-color: $color-content-dark;
     color: $color-content-light;
   }
   &__light {
-    @include section-wrapper-padding;
+    @include mixins.section-wrapper-padding;
     font-family: $font-fam1;
     font-size: $font-size-section-header;
     background-color: $color-content-light;
@@ -28,3 +31,14 @@
     border-bottom: 1px solid $color-content-dark;
   }
 }
+
+.section-content-wrapper {
+  @include mixins.section-wrapper-padding;
+  &__light {
+    background-color: $color-content-light;
+  }
+  &__dark {
+    background-color: $color-content-dark;
+  }
+}
+/* #endregion */
