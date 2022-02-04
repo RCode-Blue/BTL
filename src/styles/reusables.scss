@@ -60,20 +60,37 @@
     max-width: 50rem;
     min-width: 20rem;
     width: 40vw;
+    @include mixins.respond-to("tablet") {
+      font-size: $font-size-section-content_tablet;
+      max-width: 100%;
+      width: 100%;
+    }
   }
   &__img {
     padding: 4rem 1.5rem;
     width: 9vw;
     min-width: 10rem;
     display: inline-block;
+    @include mixins.respond-to("mobile") {
+      min-width: 7rem;
+    }
 
     &__icon {
       max-width: 100%;
+      @include mixins.respond-to("mobile") {
+        // width: 10rem;
+      }
     }
     &__label {
       padding: 1.5rem 0;
       font-size: $font-size-section-icolabel;
       text-align: center;
+      @include mixins.respond-to("tablet") {
+        font-size: $font-size-section-icolabel_tablet;
+      }
+      @include mixins.respond-to("mobile") {
+        font-size: $font-size-section-icolabel_mobile;
+      }
     }
   }
 }
@@ -216,6 +233,7 @@
         }
         @include mixins.respond-to("tablet") {
           font-size: $font-size-section-button_tablet;
+          // padding: auto;
         }
       }
     }
