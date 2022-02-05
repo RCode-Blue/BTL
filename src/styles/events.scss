@@ -6,12 +6,42 @@
 // == /events ==
 /* #region */
 
-.events-sectionbody {
+.eventspage-wrap {
   @include mixins.section-wrapper-padding-light;
+  padding: 0 4rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include mixins.respond-to("laptop") {
+    // padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include mixins.respond-to("tablet") {
+    flex-direction: column;
+  }
+  @include mixins.respond-to("mobile") {
+  }
+}
+
+.eventspage {
+  &__box {
+    width: 44vw;
+    min-width: 47rem;
+    @include mixins.respond-to("laptop") {
+      width: 73vw;
+    }
+    @include mixins.respond-to("tablet") {
+      width: 80%;
+      min-width: 30rem;
+    }
+    @include mixins.respond-to("mobile") {
+      width: 80%;
+      min-width: 28rem;
+    }
+  }
 }
 
 /* #endregion */

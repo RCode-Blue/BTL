@@ -10,7 +10,7 @@ import "../styles/sectionHeader.scss";
 import "../styles/reusables.scss";
 import "../styles/home.scss";
 import "../styles/events.scss";
-import "../styles/event_page.scss";
+import "../styles/eventPage.scss";
 import "../styles/footer.scss";
 
 function App() {

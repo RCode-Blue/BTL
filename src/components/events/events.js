@@ -32,9 +32,11 @@ const Events = () => {
   return (
     <div>
       <SectionHeaderLight text={headerText} />
-      <div className="events-sectionbody">{<EventBox node={node0} />}</div>
-      <div className="events-sectionbody">{<EventBox node={node1} />}</div>
-      <div className="events-sectionbody">{<EventBox node={node2} />}</div>
+      <div className="eventspage-wrap">
+        <div className="eventspage__box">{<EventBox node={node0} />}</div>
+        <div className="eventspage__box">{<EventBox node={node1} />}</div>
+        <div className="eventspage__box">{<EventBox node={node2} />}</div>
+      </div>
     </div>
   );
 };
