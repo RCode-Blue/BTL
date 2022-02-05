@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 // import "../../../styles/_reusables/articleHeader.scss";
-import "../../../styles/allStyles.scss";
+// import "../../../styles/allStyles.scss";
 
 const EventHeader = () => {
   return (

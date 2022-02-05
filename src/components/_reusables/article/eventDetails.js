@@ -1,7 +1,7 @@
 import React from "react";
 
 // import "../../../styles/_reusables/eventDetails.scss";
-import "../../../styles/allStyles.scss";
+// import "../../../styles/allStyles.scss";
 
 const renderEventCategories = (data) => {
   const {

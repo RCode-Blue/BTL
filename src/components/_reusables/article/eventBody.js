@@ -5,7 +5,7 @@ import EventDescription from "./eventDescription";
 import EventDetails from "./eventDetails";
 
 // import "../../../styles/_reusables/eventBody.scss";
-import "../../../styles/allStyles.scss";
+// import "../../../styles/allStyles.scss";
 
 // import HeaderLayout from "../../../layouts/headerLayout";
 // import FooterLayout from "../../../layouts/footerLayout";

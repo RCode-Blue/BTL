@@ -3,7 +3,7 @@ import richTextOptions from "../../../config/richTextOptions";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 
 // import "../../../styles/configStyles/richTextOptions.scss";
-import "../../../styles/allStyles.scss";
+// import "../../../styles/allStyles.scss";
 
 const EventDescription = (data) => {
   const { json } = data;

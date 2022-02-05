@@ -9,6 +9,15 @@
   background-color: $color-header-dark;
   width: 100%;
   font-size: $font-size-footer;
+
+  @include mixins.respond-to("tablet") {
+    font-size: $font-size-footer_tablet;
+  }
+
+  @include mixins.respond-to("mobile") {
+    font-size: $font-size-footer_mobile;
+  }
+
   &__wrapper {
     @include mixins.header-footer-wrapper-positioning;
     color: $color-header-light;

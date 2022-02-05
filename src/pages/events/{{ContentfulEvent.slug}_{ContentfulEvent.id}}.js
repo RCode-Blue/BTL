@@ -16,7 +16,7 @@ const Event = (props) => {
 };
 
 export const query = graphql`
-  query getEvent($id: String, $slug: String) {
+  query getEvent($slug: String, $id: String) {
     contentfulEvent(id: { eq: $id }, slug: { eq: $slug }) {
       id
       eventTitle

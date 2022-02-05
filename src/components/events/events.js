@@ -1,7 +1,7 @@
 import React from "react";
 
 // import "../../styles/home/events.scss";
-import "../../styles/allStyles.scss";
+// import "../../styles/allStyles.scss";
 import filterFutureEvents from "../../scripts/filterFutureEvents";
 
 // import { EventBox } from "../_reusables/contentSection/sectionColumns";

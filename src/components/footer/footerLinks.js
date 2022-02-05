@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 // import "../../styles/main.scss";
 // import "../../styles/footer/footerLinks.scss";
-import "../../styles/allStyles.scss";
+// import "../../styles/allStyles.scss";
 
 const FooterLinks = () => {
   return (
