@@ -8,35 +8,107 @@
 .eventpage-wrapper {
   @include mixins.section-wrapper-padding;
   @include mixins.section-wrapper-padding-light;
+  padding: 4rem 10rem;
+  @include mixins.respond-to("tablet") {
+    padding: 2rem 5rem;
+  }
+  @include mixins.respond-to("mobile") {
+    padding: 1rem 3rem;
+  }
 }
 
 .eventpage-article {
   &__image {
     max-height: 50rem;
     height: 50vh;
+    width: 100%;
+    @include mixins.respond-to("tablet") {
+      height: 20rem;
+    }
+    @include mixins.respond-to("mobile") {
+      height: 15rem;
+    }
   }
   &__title {
     padding: 4rem;
     font-size: $font-size-section-header;
     text-align: center;
+    @include mixins.respond-to("tablet") {
+      padding: 2rem;
+      font-size: $font-size-section-header_tablet;
+    }
+    @include mixins.respond-to("mobile") {
+      padding: 1rem;
+      font-size: $font-size-section-header_mobile;
+    }
   }
 
   &__details-wrapper {
-    margin: auto;
-    padding: 4rem;
+    // margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include mixins.respond-to("tablet") {
+      padding: 2rem 1rem 4rem 1rem;
+    }
+    @include mixins.respond-to("mobile") {
+      padding: 2rem 0.5rem 4rem 0.5rem;
+    }
   }
 
   &__details {
+    margin: auto;
     display: flex;
     flex-direction: row;
     font-size: $font-size-footer;
+
+    @include mixins.respond-to("tablet") {
+      font-size: $font-size-footer_tablet;
+    }
+    @include mixins.respond-to("mobile") {
+      font-size: $font-size-footer_mobile;
+    }
+
     &__categories,
     &__times {
       padding: 2rem;
       display: flex;
       flex-direction: row;
-      > div {
-        padding: 0 2rem;
+
+      @include mixins.respond-to("tablet") {
+        padding: 1rem;
+      }
+      @include mixins.respond-to("mobile") {
+        padding: 0;
+      }
+
+      &_blank {
+      }
+      &__category,
+      &__start,
+      &__duration {
+        margin: 0 3rem;
+        padding: 1rem;
+        border: 1px solid;
+
+        @include mixins.respond-to("tablet") {
+          margin: 0 1.5rem;
+        }
+        @include mixins.respond-to("mobile") {
+          margin: 0 0.5rem;
+        }
+      }
+      &__category {
+        border-color: $color-blue2;
+        border-radius: 20px;
+        background-color: $color-content-dark-opacity_1;
+      }
+      &__start {
+        border-color: $color-header-dark;
+      }
+      &__duration {
+        border-color: $color-header-dark;
       }
     }
   }

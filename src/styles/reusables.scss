@@ -155,7 +155,7 @@
     color: $color-content-light;
     padding: 2rem;
     font-size: $font-size-section-content;
-    background-color: $color-content-dark-opacity_1;
+    background-color: $color-content-dark-opacity_2;
 
     @include mixins.respond-to("monitor") {
       // position: absolute;
@@ -171,7 +171,7 @@
       width: 100%;
       // margin: 0 1rem;
       padding: 1rem;
-      background-color: $color-content-dark-opacity_2;
+      background-color: $color-content-dark-opacity_3;
       font-size: $font-size-section-content_tablet;
       display: block;
     }
@@ -225,7 +225,7 @@
       }
     }
     &__button {
-      background-color: $color-content-dark-opacity_1;
+      background-color: $color-content-dark-opacity_2;
       padding: 1rem;
       @include mixins.nav-element-styling;
       @include mixins.nav-element-styling__lighttxt;

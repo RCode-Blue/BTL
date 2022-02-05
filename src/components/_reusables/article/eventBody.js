@@ -4,14 +4,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import EventDescription from "./eventDescription";
 import EventDetails from "./eventDetails";
 
-// import "../../../styles/_reusables/eventBody.scss";
-// import "../../../styles/allStyles.scss";
-
-// import HeaderLayout from "../../../layouts/headerLayout";
-// import FooterLayout from "../../../layouts/footerLayout";
-
 const renderEventContents = (data) => {
-  console.log(data);
+  // console.log(data);
   const image = data.eventImage.image.gatsbyImageData;
   const desc = data.eventImage.image.description;
   const title = data.eventTitle;
