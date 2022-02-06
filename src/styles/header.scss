@@ -28,6 +28,13 @@
   vertical-align: middle;
 }
 
+.topnav-mobile {
+  display: none;
+  @include mixins.respond-to("mobile") {
+    display: flex;
+  }
+}
+
 .topnav-bar {
   font-size: $font-size-topnav;
 

@@ -8,6 +8,7 @@ import { Link } from "gatsby";
 const TopNav = () => {
   return (
     <div className="topnav-wrapper">
+      <nav className="topnav-mobile"></nav>
       <nav className="topnav-bar">
         <div>
           <Link to="/">Home</Link>
