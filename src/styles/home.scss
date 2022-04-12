@@ -98,7 +98,8 @@
     height: 40%;
   }
   @include mixins.respond-to("tablet") {
-    // width: 80%;
+    min-width: 10rem;
+    width: 95%;
     // height: 30rem;
   }
 }

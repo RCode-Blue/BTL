@@ -128,7 +128,7 @@
     padding-bottom: 1rem;
   }
   @include mixins.respond-to("mobile") {
-    // width: 50%;
+    width: 100%;
   }
 
   &__image {
