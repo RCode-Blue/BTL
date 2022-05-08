@@ -4,8 +4,6 @@ import HeaderLayout from "../layouts/headerLayout";
 import FooterLayout from "../layouts/footerLayout";
 
 const MainLayout = ({ children }) => {
-  // const [isOpen, setIsOpen] = React.useState(false);
-
   return (
     <div>
       <HeaderLayout />

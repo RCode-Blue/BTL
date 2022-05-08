@@ -1,9 +1,6 @@
 import React from "react";
-// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import fetchHowItWorksIcons from "../../queries/fetchHowItWorksIcons";
-// import "../../styles/home/howItWorks.scss";
-// import "../../styles/allStyles.scss";
 import {
   TextCol,
   IconColHome,

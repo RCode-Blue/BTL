@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 
-// import "../../styles/main.scss";
-// import "../../styles/topNav.scss";
-// import "../../styles/allStyles.scss";
-
 const TopNav = () => {
   return (
     <div className="topnav-wrapper">

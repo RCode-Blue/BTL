@@ -1,9 +1,4 @@
 import React from "react";
-import { link } from "gatsby";
-
-// import "../../styles/shared/_mixins.scss";
-// import "../../styles/footer/footerContent.scss";
-// import "../../styles/allStyles.scss";
 
 const FooterContent = () => {
   return (

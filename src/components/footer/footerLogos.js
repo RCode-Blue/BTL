@@ -1,10 +1,7 @@
 import React from "react";
-
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import FetchFooterLogos from "../../queries/fetchLogos";
 
-// import "../../styles/footer/footerLogos.scss";
-// import "../../styles/allStyles.scss";
+import FetchFooterLogos from "../../queries/fetchLogos";
 
 const RenderLogos = (data) => {
   return (

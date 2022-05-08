@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 
-// import "../../styles/main.scss";
-// import "../../styles/footer/footerLinks.scss";
-// import "../../styles/allStyles.scss";
-
 const FooterLinks = () => {
   return (
     <nav className="footer-nav">

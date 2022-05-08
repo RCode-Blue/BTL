@@ -3,10 +3,6 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import TextBox from "./heroTextBox";
 
-// import "../../styles/allStyles.scss";
-
-// Requires gatsbyImageData and description of image
-
 const ImageUnderlay = (data) => {
   const { gatsbyImageData, description } = data.data.image;
 

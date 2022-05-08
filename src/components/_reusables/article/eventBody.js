@@ -5,7 +5,6 @@ import EventDescription from "./eventDescription";
 import EventDetails from "./eventDetails";
 
 const renderEventContents = (data) => {
-  // console.log(data);
   const image = data.eventImage.image.gatsbyImageData;
   const desc = data.eventImage.image.description;
   const title = data.eventTitle;

@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 
-// import "../../styles/shared/_variables.scss";
-// import "../../styles/home/heroTextBox.scss";
-// import "../../styles/allStyles.scss";
-
 const renderTextString = (txtString) => {
   return <div className="textbox__text">{txtString}</div>;
 };

@@ -4,7 +4,6 @@ import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
 import HowItWorksColumns from "./howItWorksColumns";
 
 const RenderColumns = (data) => {
-  // console.log(data);
   return <div></div>;
 };
 

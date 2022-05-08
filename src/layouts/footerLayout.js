@@ -4,9 +4,6 @@ import FooterContent from "../components/footer/footerContent";
 import FooterIcons from "../components/footer/footerIcons";
 import FooterLogos from "../components/footer/footerLogos";
 
-// import "../styles/footer/footerLayout.scss";
-// import "../styles/allStyles.scss";
-
 const FooterLayout = () => {
   return (
     <div className="footer">

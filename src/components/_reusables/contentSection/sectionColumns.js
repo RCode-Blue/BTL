@@ -1,9 +1,6 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-// import "../../../styles/_reusables/sectionColumns.scss";
-// import "../../../styles/allStyles.scss";
-
 // Home > How it Works > Text column
 const TextCol = (text) => {
   const { txt } = text;

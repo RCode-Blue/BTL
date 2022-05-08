@@ -3,11 +3,10 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import dayjs from "dayjs";
 
-// const utc = require("dayjs/plugin/utc");
 const timezone = require("dayjs/plugin/timezone");
 const customParseFormat = require("dayjs/plugin/customParseFormat");
 const advancedFormat = require("dayjs/plugin/advancedFormat");
-// dayjs.extend(utc);
+
 dayjs.extend(timezone);
 dayjs.extend(customParseFormat);
 dayjs.extend(advancedFormat);
