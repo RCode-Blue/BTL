@@ -9,7 +9,6 @@ const RenderLogos = (data) => {
       {data.data.map((node) => {
         const imgId = node.id;
         const image = getImage(node.image.gatsbyImageData);
-        // console.log(node);
         return (
           <div key={imgId} className="footerlogos__govcrest">
             <GatsbyImage image={image} alt={node.image.title} />

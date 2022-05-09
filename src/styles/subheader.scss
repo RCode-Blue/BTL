@@ -36,6 +36,7 @@
 .subheader-subnav {
   @include mixins.nav-bar-structure;
   justify-content: center;
+  
   font-size: $font-size-subnav;
 
   @include mixins.respond-to("tablet") {
@@ -49,6 +50,7 @@
   &__item {
     @include mixins.nav-element-styling;
     @include mixins.nav-element-styling__lighttxt;
+    
   }
 }
 

@@ -11,10 +11,18 @@ module.exports = {
         accessToken: process.env.ACCESS_TOKEN,
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `source`,
+        path: `${__dirname}/src/`,
+      },
+    },
     `gatsby-background-image`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-documentationjs`,
+    `gatsby-transformer-sharp`,
   ],
 };

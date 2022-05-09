@@ -3,15 +3,11 @@ import React from "react";
 import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
 import HowItWorksColumns from "./howItWorksColumns";
 
-const RenderColumns = (data) => {
-  return <div></div>;
-};
-
 const HowItWorks = () => {
   const headerText = "How it Works";
 
   return (
-    <div>
+    <div id="howitworks">
       <SectionHeaderLight text={headerText} />
       <HowItWorksColumns />
     </div>

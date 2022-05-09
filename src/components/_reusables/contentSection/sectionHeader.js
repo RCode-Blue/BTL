@@ -13,7 +13,7 @@ const SectionHeaderDark = (data) => {
 const SectionHeaderLight = (data) => {
   // console.log(data.text);
   return (
-    <div className="section-header_wrapper__light">
+    <div id="ourtools" className="section-header_wrapper__light">
       <div className="section-header__light">
         <div>{data.text}</div>
       </div>

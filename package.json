@@ -46,10 +46,9 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-sharp": "^4.4.0",
     "gatsby-source-contentful": "^7.2.0",
-    "gatsby-source-filesystem": "^4.4.0",
+    "gatsby-source-filesystem": "^4.13.0",
+    "gatsby-transformer-documentationjs": "^6.13.0",
     "gatsby-transformer-sharp": "^4.4.0",
-    "moment": "^2.29.1",
-    "moment-timezone": "^0.5.34",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "save": "^2.4.0"

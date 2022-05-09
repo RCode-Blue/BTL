@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
+// import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const renderSubheaderTitle = (title) => {
   return (
@@ -14,8 +15,10 @@ const renderSubNavi = (navLinks) => {
     <div className="subheader-subnav">
       {navLinks.map((navi) => {
         return (
-          <div key={navi.id} className="subheader-subnav__item">
-            <Link to={navi.url}>{navi.text}</Link>
+          <div className="subheader-subnav__item" key={navi.id}>
+            <a href={navi.url} title={navi.title}>
+              {navi.title}
+            </a>
           </div>
         );
       })}

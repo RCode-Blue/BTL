@@ -10,6 +10,7 @@ const advancedFormat = require("dayjs/plugin/advancedFormat");
 dayjs.extend(timezone);
 dayjs.extend(customParseFormat);
 dayjs.extend(advancedFormat);
+dayjs().format("Q Do k kk X x");
 
 const EventBox = (data) => {
   const renderEventBoxSubImg = (data) => {
@@ -27,12 +28,10 @@ const EventBox = (data) => {
     const node = data.node;
 
     const startTime = node.eventStart;
-    const timeString = `${startTime.slice(0, 10)}T${startTime.substr(
-      11,
-      5
-    )}:11:00`;
 
-    const eventDayTime = dayjs(startTime).format("ddd DD MMM YYYY hh:mm A z");
+    const eventDayTime = dayjs(startTime).format("ddd DD MMM YYYY hh:mm A");
+    const eventTimeZone = dayjs(startTime).format("zzz");
+    let testStartTime = dayjs(startTime);
 
     const { eventTitle, eventStart, slug, id } = data.node;
     const urlString = "/events/" + slug + "_" + id + `}`;
@@ -41,6 +40,7 @@ const EventBox = (data) => {
         <div className="eventbox__textsection__title">{eventTitle}</div>
         <div className="eventbox__textsection__content">
           <div className="eventbox__textsection__date">{eventDayTime}</div>
+          <div className="eventbox__textsection__date">{eventTimeZone}</div>
           <button className="eventbox__textsection__button">
             <Link
               className="eventbox__textsection__button__link"

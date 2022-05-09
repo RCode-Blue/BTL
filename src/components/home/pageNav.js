@@ -1,23 +1,18 @@
 const navLinks = [
   {
     id: 1,
-    text: "How does it work?",
-    url: "/",
+    title: "How does it work?",
+    url: "/#howitworks",
   },
   {
     id: 2,
-    text: "The tools",
-    url: "/",
+    title: "The tools",
+    url: "/#ourtools",
   },
   {
     id: 3,
-    text: "Popular items",
-    url: "/",
-  },
-  {
-    id: 4,
-    text: "What's on",
-    url: "/",
+    title: "What's on",
+    url: "/#whatson",
   },
 ];
 

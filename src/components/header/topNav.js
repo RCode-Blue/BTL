@@ -10,13 +10,13 @@ const TopNav = () => {
           <Link to="/">Home</Link>
         </div>
         <div>
-          <Link to="/library">Browse the Library</Link>
+          <Link to="/">Browse the Library</Link>
         </div>
         <div>
           <Link to="/events">Events</Link>
         </div>
         <div>
-          <Link to="/blogs">Blogs</Link>
+          <Link to="/">Blogs</Link>
         </div>
         <div>
           <Link to="/about">About Us</Link>

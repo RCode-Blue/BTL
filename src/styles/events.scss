@@ -3,9 +3,6 @@
 @import "./base";
 @import "./variables";
 
-// == /events ==
-/* #region */
-
 .eventspage-wrap {
   @include mixins.section-wrapper-padding-light;
   padding: 0 4rem;
@@ -15,7 +12,6 @@
   justify-content: space-between;
 
   @include mixins.respond-to("laptop") {
-    // padding: 0;
     flex-direction: column;
     align-items: center;
   }
@@ -43,5 +39,3 @@
     }
   }
 }
-
-/* #endregion */
