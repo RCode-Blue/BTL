@@ -6,24 +6,26 @@ const TopNav = () => {
     <div className="topnav-wrapper">
       <nav className="topnav-mobile"></nav>
       <nav className="topnav-bar">
-        <div>
-          <Link to="/">Home</Link>
-        </div>
-        <div>
-          <Link to="/">Browse the Library</Link>
-        </div>
-        <div>
-          <Link to="/events">Events</Link>
-        </div>
-        <div>
-          <Link to="/">Blogs</Link>
-        </div>
-        <div>
-          <Link to="/about">About Us</Link>
-        </div>
-        <div>
-          <Link to="/login">Member Login</Link>
-        </div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/">Browse the Library</Link>
+          </li>
+          <li>
+            <Link to="/events">Events</Link>
+          </li>
+          <li>
+            <Link to="/">Blogs</Link>
+          </li>
+          <li>
+            <Link to="/">About Us</Link>
+          </li>
+          <li>
+            <Link to="/">Member Login</Link>
+          </li>
+        </ul>
       </nav>
     </div>
   );

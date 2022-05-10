@@ -16,7 +16,6 @@ const renderButton = (btnString, btnUrl) => {
 };
 
 const TextBox = (data) => {
-  // console.log(data);
   const { heroText, btnString, btnUrl } = data;
   return (
     <div className="textbox">

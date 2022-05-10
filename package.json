@@ -8,7 +8,8 @@
     "gatsbydev": "gatsby develop",
     "dev": "npm-run-all clean gatsbydev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "doc":"documentation build -o './docs' -f 'html"
   },
   "repository": {
     "type": "git",

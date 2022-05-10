@@ -1,31 +1,52 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const FooterLinks = () => {
+const footerLinksList = [
+  {
+    tabIndex: "0",
+    to: "/",
+    text: "Log in",
+  },
+  {
+    tabIndex: "1",
+    to: "/",
+    text: "F.A.Q.",
+  },
+  {
+    tabIndex: "2",
+    to: "/",
+    text: "Terms of use",
+  },
+  {
+    tabIndex: "3",
+    to: "/",
+    text: "Privacy policies",
+  },
+];
+
+const renderFooterLinks = (footerLinksList) => {
   return (
-    <nav className="footer-nav">
-      <div>
-        <Link aria-roledescription="navigation link" tabIndex="0" to="/">
-          Log in
-        </Link>
-      </div>
-      <div>
-        <Link aria-roledescription="navigation link" tabIndex="1" to="/">
-          F.A.Q.
-        </Link>
-      </div>
-      <div>
-        <Link aria-roledescription="navigation link" tabIndex="2" to="/">
-          Terms of Use
-        </Link>
-      </div>
-      <div>
-        <Link aria-roledescription="navigation link" tabIndex="3" to="/">
-          Privacy policies
-        </Link>
-      </div>
-    </nav>
+    <ul>
+      {footerLinksList.map((linkItem) => {
+        const { tabIndex, to, text } = linkItem;
+        return (
+          <li>
+            <Link
+              aria-roledescription="navigation link"
+              tabIndex={tabIndex}
+              to={to}
+            >
+              {text}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
   );
+};
+
+const FooterLinks = () => {
+  return <nav className="footer-nav">{renderFooterLinks(footerLinksList)}</nav>;
 };
 
 export default FooterLinks;

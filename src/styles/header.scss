@@ -37,27 +37,30 @@
 
 .topnav-bar {
   font-size: $font-size-topnav;
+  >ul{
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-spacing: -1px;
+    > li{
+      @include mixins.nav-element-styling;
+      @include mixins.nav-element-styling__darktxt;
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  word-spacing: -1px;
-  & > div {
-    @include mixins.nav-element-styling;
-    @include mixins.nav-element-styling__darktxt;
-
-    padding: 0.5rem 1.4rem;
+      padding: 0.5rem 1.4rem;
+      @include mixins.respond-to("tablet") {
+        padding: 0 1rem;
+      }
+    }
     @include mixins.respond-to("tablet") {
-      padding: 0 1rem;
+      font-size: $font-size-topnav_tablet;
+    }
+    @include mixins.respond-to("mobile") {
+      font-size: $font-size-topnav_mobile;
     }
   }
-  @include mixins.respond-to("tablet") {
-    font-size: $font-size-topnav_tablet;
-  }
-  @include mixins.respond-to("mobile") {
-    font-size: $font-size-topnav_mobile;
-  }
+
 }
 
 .btllogo-wrapper {

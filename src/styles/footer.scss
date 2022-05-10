@@ -32,12 +32,16 @@
 }
 
 .footer-nav {
-  @include mixins.nav-bar-structure;
-  justify-content: center;
+  
 
-  > div {
-    @include mixins.nav-element-styling;
-    @include mixins.nav-element-styling__lighttxt;
+  > ul {
+    @include mixins.nav-bar-structure;
+    justify-content: center;
+    list-style-type: none;
+    >li{
+      @include mixins.nav-element-styling;
+      @include mixins.nav-element-styling__lighttxt;
+    }
   }
 }
 
@@ -56,8 +60,9 @@
 
 .footericons-bar {
   @include mixins.nav-bar-structure;
-  > div {
+  > li {
     padding: 1rem;
+    list-style-type: none;
   }
 }
 
