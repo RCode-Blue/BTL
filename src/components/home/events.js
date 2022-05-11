@@ -7,6 +7,13 @@ import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
 
 import AllEvents from "../../queries/fetchAllEvents";
 
+/**
+ * @description Render function for future events summary
+ *
+ * @inner
+ * @function renderFutureEvents
+ * @memberof App.components.HomeMain.HomeContents.Events
+ */
 const renderFutureEvents = (allEvents, size) => {
   let futureEvents = filterFutureEvents(allEvents);
   if (futureEvents.length === 0) {
@@ -29,6 +36,13 @@ const renderFutureEvents = (allEvents, size) => {
   );
 };
 
+/**
+ * @description 'Events' component in homepage
+ *
+ * @namespace Events
+ * @memberof App.components.HomeMain.HomeContents
+ *
+ */
 const Events = () => {
   const events = AllEvents();
   const allEvents = events.allContentfulEvent.nodes;

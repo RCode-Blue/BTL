@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/home/homeMain.js</title>
+    <title>JSDoc: Source: layouts/headerLayout.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/home/homeMain.js</h1>
+    <h1 class="page-title">Source: layouts/headerLayout.js</h1>
 
     
 
@@ -26,28 +26,31 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Fragment } from "react";
+            <pre class="prettyprint source linenums"><code>import React from "react";
 
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
+import BtlLogo from "../components/header/btlLogo";
+import TopNav from "../components/header/topNav";
 
 /**
- * @description Component for the main landing page
+ * @description Main header component
  *
- * @namespace HomeMain
- * @memberof App.components
- * @component
+ * @namespace HeaderLayout
+ * @memberof App.components.MainLayout
  */
-const HomeMain = () => {
+const HeaderLayout = () => {
   return (
-    &lt;Fragment>
-      &lt;HomeHeader />
-      &lt;HomeContents />
-    &lt;/Fragment>
+    &lt;div className="header">
+      &lt;div className="header-wrapper">
+        &lt;div className="header__bar">
+          &lt;BtlLogo />
+          &lt;TopNav />
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
   );
 };
 
-export default HomeMain;
+export default HeaderLayout;
 </code></pre>
         </article>
     </section>

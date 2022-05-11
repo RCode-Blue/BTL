@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/home/homeMain.js</title>
+    <title>JSDoc: Source: components/home/ourTools.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/home/homeMain.js</h1>
+    <h1 class="page-title">Source: components/home/ourTools.js</h1>
 
     
 
@@ -26,28 +26,35 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Fragment } from "react";
+            <pre class="prettyprint source linenums"><code>import React from "react";
 
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
+import { SectionHeaderDark } from "../_reusables/contentSection/sectionHeader";
+import OurToolsMockup from "./ourToolsMockup";
 
-/**
- * @description Component for the main landing page
- *
- * @namespace HomeMain
- * @memberof App.components
- * @component
- */
-const HomeMain = () => {
+const renderOurToolsText = () => {
   return (
-    &lt;Fragment>
-      &lt;HomeHeader />
-      &lt;HomeContents />
-    &lt;/Fragment>
+    &lt;p className="ourtools-content">Here are some of our most popular tools&lt;/p>
   );
 };
 
-export default HomeMain;
+/**
+ * @description 'Our Tools' section on homepage
+ *
+ * @namespace OurTools
+ * @memberof App.components.HomeMain.HomeContents
+ */
+const OurTools = () => {
+  const headerText = "Our Tools";
+  return (
+    &lt;div id="ourtools">
+      &lt;SectionHeaderDark text={headerText} />
+      {renderOurToolsText()}
+      &lt;OurToolsMockup />
+    &lt;/div>
+  );
+};
+
+export default OurTools;
 </code></pre>
         </article>
     </section>

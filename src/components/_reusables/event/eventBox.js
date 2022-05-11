@@ -12,7 +12,23 @@ dayjs.extend(customParseFormat);
 dayjs.extend(advancedFormat);
 dayjs().format("Q Do k kk X x");
 
+/**
+ * @description Reusable event box component
+ *
+ * @namespace EventBox
+ * @memberof App.components
+ */
 const EventBox = (data) => {
+  /**
+   * @description Renders the image within an event box
+   *
+   * @function renderEventBoxSubImg
+   * @inner
+   * @memberof App.components.EventBox
+   * @param {object} data image data
+   * @param {object} data.image gatsbyImageData object that represents the image retrieved from a GraphQL query
+   * @param {string} data.desc Description of retrieved image object
+   */
   const renderEventBoxSubImg = (data) => {
     const image = data.node.eventImage.image.gatsbyImageData;
     const desc = data.node.eventImage.image.description;
@@ -23,6 +39,18 @@ const EventBox = (data) => {
     );
   };
 
+  /**
+   * @description Renders text assocxialted with an event
+   *
+   * @function renderEventBoxSubTxt
+   * @inner
+   * @memberof App.components.EventBox
+   * @param {object} data Text data retrieved from GraphQL query
+   * @param {string} data.node.eventStart Event start time
+   * @param {string} data.node.eventTitle Event title
+   * @param {string} data.node.slug Event details slug
+   * @param {string} data.node.id Event id
+   */
   // Home > Events - Event box - Text overlay
   const renderEventBoxSubTxt = (data) => {
     const node = data.node;
@@ -33,7 +61,7 @@ const EventBox = (data) => {
     const eventTimeZone = dayjs(startTime).format("zzz");
     let testStartTime = dayjs(startTime);
 
-    const { eventTitle, eventStart, slug, id } = data.node;
+    const { eventTitle, slug, id } = data.node;
     const urlString = "/events/" + slug + "_" + id + `}`;
     return (
       <div className="eventbox__textsection">

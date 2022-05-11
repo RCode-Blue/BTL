@@ -1,7 +1,12 @@
 import React from "react";
-// import { Link } from "gatsby";
-// import { AnchorLink } from "gatsby-plugin-anchor-links";
 
+/**
+ * @description Renders header text for a section
+ *
+ * @namespace renderSubheaderTitle
+ * @inner
+ * @memberof App.components.SubHeader
+ */
 const renderSubheaderTitle = (title) => {
   return (
     <div className="subheader-subtitle">
@@ -10,6 +15,13 @@ const renderSubheaderTitle = (title) => {
   );
 };
 
+/**
+ * @description Renders navigation for a section header
+ *
+ * @namespace renderSubNavi
+ * @inner
+ * @memberof App.components.SubHeader
+ */
 const renderSubNavi = (navLinks) => {
   return (
     <div className="subheader-subnav">
@@ -26,7 +38,13 @@ const renderSubNavi = (navLinks) => {
   );
 };
 
-const subHeader = (data) => {
+/**
+ * @description Reusable section header component
+ *
+ * @namespace SubHeader
+ * @memberof App.components
+ */
+const SubHeader = (data) => {
   return (
     <div className="subheader-wrapper">
       <div className="subheader">
@@ -37,4 +55,4 @@ const subHeader = (data) => {
   );
 };
 
-export default subHeader;
+export default SubHeader;

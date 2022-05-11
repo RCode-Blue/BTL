@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/home/homeMain.js</title>
+    <title>JSDoc: Source: components/home/heroImage.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/home/homeMain.js</h1>
+    <h1 class="page-title">Source: components/home/heroImage.js</h1>
 
     
 
@@ -26,28 +26,45 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Fragment } from "react";
+            <pre class="prettyprint source linenums"><code>import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
+import HeroTextBox from "./heroTextBox";
 
 /**
- * @description Component for the main landing page
+ * @description Hero image component
  *
- * @namespace HomeMain
- * @memberof App.components
- * @component
+ * @namespace HeroImage
+ * @memberof App.components.HomeMain.HomeContents
  */
-const HomeMain = () => {
+const HeroImage = (data) => {
+  const { gatsbyImageData, description } = data.data.image;
+
+  const heroText =
+    "Sharing resources and skills to enhance the resilience of communities";
+  const btnString = "Become a member";
+  const btnUrl = "/";
+
   return (
-    &lt;Fragment>
-      &lt;HomeHeader />
-      &lt;HomeContents />
-    &lt;/Fragment>
+    &lt;div className="hero-image-wrapper">
+      &lt;GatsbyImage
+        layout="fullwidth"
+        image={gatsbyImageData}
+        alt={description}
+        className="hero-image"
+      />
+
+      &lt;HeroTextBox
+        heroText={heroText}
+        btnString={btnString}
+        btnUrl={btnUrl}
+        className="hero-textbox"
+      />
+    &lt;/div>
   );
 };
 
-export default HomeMain;
+export default HeroImage;
 </code></pre>
         </article>
     </section>

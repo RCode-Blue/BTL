@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/home/homeMain.js</title>
+    <title>JSDoc: Source: components/home/homeContents.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/home/homeMain.js</h1>
+    <h1 class="page-title">Source: components/home/homeContents.js</h1>
 
     
 
@@ -28,26 +28,33 @@
         <article>
             <pre class="prettyprint source linenums"><code>import React, { Fragment } from "react";
 
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
+import FetchHeroImage from "../../queries/fetchHeroImage";
+import HeroImage from "./heroImage";
+import HowItWorks from "./howItWorks";
+import OurTools from "./ourTools";
+import Events from "./events";
 
 /**
- * @description Component for the main landing page
+ * @description Content section for the homepage component
  *
- * @namespace HomeMain
- * @memberof App.components
- * @component
+ * @namespace HomeContents
+ * @memberof App.components.HomeMain
  */
-const HomeMain = () => {
+const HomeContents = () => {
+  const data = FetchHeroImage();
+  const imgData = data.allContentfulBannerImage.nodes[0];
+
   return (
     &lt;Fragment>
-      &lt;HomeHeader />
-      &lt;HomeContents />
+      &lt;HeroImage data={imgData} />
+      &lt;HowItWorks />
+      &lt;OurTools />
+      &lt;Events />
     &lt;/Fragment>
   );
 };
 
-export default HomeMain;
+export default HomeContents;
 </code></pre>
         </article>
     </section>

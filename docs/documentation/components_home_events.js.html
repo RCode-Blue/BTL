@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/home/homeMain.js</title>
+    <title>JSDoc: Source: components/home/events.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/home/homeMain.js</h1>
+    <h1 class="page-title">Source: components/home/events.js</h1>
 
     
 
@@ -26,28 +26,65 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Fragment } from "react";
+            <pre class="prettyprint source linenums"><code>import React from "react";
 
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
+import filterFutureEvents from "../../scripts/filterFutureEvents";
+
+import EventBox from "../_reusables/event/eventBox";
+import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
+
+import AllEvents from "../../queries/fetchAllEvents";
 
 /**
- * @description Component for the main landing page
+ * @description Render function for future events summary
  *
- * @namespace HomeMain
- * @memberof App.components
- * @component
+ * @inner
+ * @function renderFutureEvents
+ * @memberof App.components.HomeMain.HomeContents.Events
  */
-const HomeMain = () => {
+const renderFutureEvents = (allEvents, size) => {
+  let futureEvents = filterFutureEvents(allEvents);
+  if (futureEvents.length === 0) {
+    return (
+      &lt;div className="home-section-events-wrapper">
+        No future events scheduled
+      &lt;/div>
+    );
+  }
   return (
-    &lt;Fragment>
-      &lt;HomeHeader />
-      &lt;HomeContents />
-    &lt;/Fragment>
+    &lt;div className="home-section-events-wrapper">
+      {futureEvents.slice(0, size).map((event) => {
+        return (
+          &lt;div className="home-section-eventsbox" key={event.id}>
+            {&lt;EventBox node={event} />}
+          &lt;/div>
+        );
+      })}
+    &lt;/div>
   );
 };
 
-export default HomeMain;
+/**
+ * @description 'Events' component in homepage
+ *
+ * @namespace Events
+ * @memberof App.components.HomeMain.HomeContents
+ *
+ */
+const Events = () => {
+  const events = AllEvents();
+  const allEvents = events.allContentfulEvent.nodes;
+  const headerText = "Events";
+
+  return (
+    &lt;div id="whatson">
+      &lt;SectionHeaderLight text={headerText} />
+      &lt;div>{renderFutureEvents(allEvents, 2)}&lt;/div>
+    &lt;/div>
+  );
+};
+
+export default Events;
 </code></pre>
         </article>
     </section>

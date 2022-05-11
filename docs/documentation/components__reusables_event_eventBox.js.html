@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/_reusables/event/eventBox.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/_reusables/event/eventBox.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+import dayjs from "dayjs";
+
+const timezone = require("dayjs/plugin/timezone");
+const customParseFormat = require("dayjs/plugin/customParseFormat");
+const advancedFormat = require("dayjs/plugin/advancedFormat");
+
+dayjs.extend(timezone);
+dayjs.extend(customParseFormat);
+dayjs.extend(advancedFormat);
+dayjs().format("Q Do k kk X x");
+
+/**
+ * @description Reusable event box component
+ *
+ * @namespace EventBox
+ * @memberof App.components
+ */
+const EventBox = (data) => {
+  /**
+   * @description Renders the image within an event box
+   *
+   * @function renderEventBoxSubImg
+   * @inner
+   * @memberof App.components.EventBox
+   * @param {object} data image data
+   * @param {object} data.image gatsbyImageData object that represents the image retrieved from a GraphQL query
+   * @param {string} data.desc Description of retrieved image object
+   */
+  const renderEventBoxSubImg = (data) => {
+    const image = data.node.eventImage.image.gatsbyImageData;
+    const desc = data.node.eventImage.image.description;
+    return (
+      &lt;div className="eventbox__image">
+        &lt;GatsbyImage className="eventimage" image={image} alt={desc} />
+      &lt;/div>
+    );
+  };
+
+  /**
+   * @description Renders text assocxialted with an event
+   *
+   * @function renderEventBoxSubTxt
+   * @inner
+   * @memberof App.components.EventBox
+   * @param {object} data Text data retrieved from GraphQL query
+   * @param {string} data.node.eventStart Event start time
+   * @param {string} data.node.eventTitle Event title
+   * @param {string} data.node.slug Event details slug
+   * @param {string} data.node.id Event id
+   */
+  // Home > Events - Event box - Text overlay
+  const renderEventBoxSubTxt = (data) => {
+    const node = data.node;
+
+    const startTime = node.eventStart;
+
+    const eventDayTime = dayjs(startTime).format("ddd DD MMM YYYY hh:mm A");
+    const eventTimeZone = dayjs(startTime).format("zzz");
+    let testStartTime = dayjs(startTime);
+
+    const { eventTitle, slug, id } = data.node;
+    const urlString = "/events/" + slug + "_" + id + `}`;
+    return (
+      &lt;div className="eventbox__textsection">
+        &lt;div className="eventbox__textsection__title">{eventTitle}&lt;/div>
+        &lt;div className="eventbox__textsection__content">
+          &lt;div className="eventbox__textsection__date">{eventDayTime}&lt;/div>
+          &lt;div className="eventbox__textsection__date">{eventTimeZone}&lt;/div>
+          &lt;button className="eventbox__textsection__button">
+            &lt;Link
+              className="eventbox__textsection__button__link"
+              to={urlString}
+            >
+              Details
+            &lt;/Link>
+          &lt;/button>
+        &lt;/div>
+      &lt;/div>
+    );
+  };
+
+  const node = data.node;
+  return (
+    &lt;div className="eventbox">
+      {renderEventBoxSubImg({ node })}
+      {renderEventBoxSubTxt({ node })}
+    &lt;/div>
+  );
+};
+
+export default EventBox;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="App.components.html">components</a></li><li><a href="App.components.EventBox.html">EventBox</a></li><li><a href="App.components.EventsMain.html">EventsMain</a></li><li><a href="App.components.EventsMain.Events.html">Events</a></li><li><a href="App.components.HomeMain.html">HomeMain</a></li><li><a href="App.components.HomeMain.HomeContents.html">HomeContents</a></li><li><a href="App.components.HomeMain.HomeContents.Events.html">Events</a></li><li><a href="App.components.HomeMain.HomeContents.HeroImage.html">HeroImage</a></li><li><a href="App.components.HomeMain.HomeContents.HeroImage.HeroTextBox.html">HeroTextBox</a></li><li><a href="App.components.HomeMain.HomeContents.HowItWorks.html">HowItWorks</a></li><li><a href="App.components.HomeMain.HomeContents.HowItWorks.HowItWorksColumns.html">HowItWorksColumns</a></li><li><a href="App.components.HomeMain.HomeContents.OurTools.html">OurTools</a></li><li><a href="App.components.HomeMain.HomeHeader.html">HomeHeader</a></li><li><a href="App.components.MainLayout.html">MainLayout</a></li><li><a href="App.components.MainLayout.FooterLayout.html">FooterLayout</a></li><li><a href="App.components.MainLayout.HeaderLayout.html">HeaderLayout</a></li><li><a href="App.components.SectionHeader.html">SectionHeader</a></li><li><a href="App.components.SectionHeader.SectionHeaderDark.html">SectionHeaderDark</a></li><li><a href="App.components.SectionHeader.SectionHeaderLight.html">SectionHeaderLight</a></li><li><a href="App.components.SubHeader.html">SubHeader</a></li><li><a href="App.components.SubHeader-renderSubheaderTitle.html">renderSubheaderTitle</a></li><li><a href="App.components.SubHeader-renderSubNavi.html">renderSubNavi</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Wed May 11 2022 23:33:36 GMT+1000 (Australian Eastern Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

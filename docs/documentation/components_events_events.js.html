@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/home/homeMain.js</title>
+    <title>JSDoc: Source: components/events/events.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/home/homeMain.js</h1>
+    <h1 class="page-title">Source: components/events/events.js</h1>
 
     
 
@@ -26,28 +26,63 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Fragment } from "react";
+            <pre class="prettyprint source linenums"><code>import React from "react";
 
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
+import filterFutureEvents from "../../scripts/filterFutureEvents";
+
+import EventBox from "../_reusables/event/eventBox";
+import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
+
+import allEvents from "../../queries/fetchAllEvents";
 
 /**
- * @description Component for the main landing page
+ * @description Main events page component
  *
- * @namespace HomeMain
- * @memberof App.components
- * @component
+ * @namespace Events
+ * @memberof App.components.EventsMain
  */
-const HomeMain = () => {
+const Events = () => {
+  const events = allEvents();
+
+  const headerText = "Events";
+
+  /**
+   * @description Renders future events
+   *
+   * @function renderFutureEvents
+   * @inner
+   * @memberof App.components.Events
+   *
+   * @param {object} allEvents
+   * @param {integer} size The number of future events to render
+   * @returns {component} A component containing the specified number of future events; alternate message if there are none
+   */
+  const renderFutureEvents = (allEvents, size) => {
+    let futureEvents = filterFutureEvents(allEvents.allContentfulEvent.nodes);
+    if (futureEvents.length === 0) {
+      return &lt;div className="eventspage-wrap">No future events scheduled&lt;/div>;
+    }
+    return (
+      &lt;div className="eventspage-wrap">
+        {futureEvents.slice(0, size).map((event) => {
+          return (
+            &lt;div className="eventspage__box" key={event.id}>
+              {&lt;EventBox node={event} />}
+            &lt;/div>
+          );
+        })}
+      &lt;/div>
+    );
+  };
   return (
-    &lt;Fragment>
-      &lt;HomeHeader />
-      &lt;HomeContents />
-    &lt;/Fragment>
+    &lt;div>
+      &lt;SectionHeaderLight text={headerText} />
+      {renderFutureEvents(events, 3)}
+    &lt;/div>
   );
 };
 
-export default HomeMain;
+export default Events;
 </code></pre>
         </article>
     </section>

@@ -1,10 +1,24 @@
 import React from "react";
 import { Link } from "gatsby";
 
+/**
+ * @description Renders title text for 'Become a member' button
+ *
+ * @inner
+ * @function renderTextString
+ * @memberof App.components.HomeMain.HomeContents.HeroImage
+ */
 const renderTextString = (txtString) => {
   return <div className="textbox__text">{txtString}</div>;
 };
 
+/**
+ * @description Render function for 'Become a Member' button in hero component
+ *
+ * @inne
+ * r@function renderButton
+ * @memberof App.components.HomeMain.HomeContents.HeroImage
+ */
 const renderButton = (btnString, btnUrl) => {
   return (
     <div className="textbox__button">
@@ -15,7 +29,13 @@ const renderButton = (btnString, btnUrl) => {
   );
 };
 
-const TextBox = (data) => {
+/**
+ * @description Text box component in Hero Image
+ *
+ * @namespace HeroTextBox
+ * @memberof App.components.HomeMain.HomeContents.HeroImage
+ */
+const HeroTextBox = (data) => {
   const { heroText, btnString, btnUrl } = data;
   return (
     <div className="textbox">
@@ -24,4 +44,4 @@ const TextBox = (data) => {
   );
 };
 
-export default TextBox;
+export default HeroTextBox;

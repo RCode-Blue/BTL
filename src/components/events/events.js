@@ -7,11 +7,28 @@ import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
 
 import allEvents from "../../queries/fetchAllEvents";
 
+/**
+ * @description Main events page component
+ *
+ * @namespace Events
+ * @memberof App.components.EventsMain
+ */
 const Events = () => {
   const events = allEvents();
 
   const headerText = "Events";
 
+  /**
+   * @description Renders future events
+   *
+   * @function renderFutureEvents
+   * @inner
+   * @memberof App.components.Events
+   *
+   * @param {object} allEvents
+   * @param {integer} size The number of future events to render
+   * @returns {component} A component containing the specified number of future events; alternate message if there are none
+   */
   const renderFutureEvents = (allEvents, size) => {
     let futureEvents = filterFutureEvents(allEvents.allContentfulEvent.nodes);
     if (futureEvents.length === 0) {

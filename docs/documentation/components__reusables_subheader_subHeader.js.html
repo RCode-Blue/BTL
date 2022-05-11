@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/home/homeMain.js</title>
+    <title>JSDoc: Source: components/_reusables/subheader/subHeader.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/home/homeMain.js</h1>
+    <h1 class="page-title">Source: components/_reusables/subheader/subHeader.js</h1>
 
     
 
@@ -26,28 +26,64 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Fragment } from "react";
-
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
+            <pre class="prettyprint source linenums"><code>import React from "react";
 
 /**
- * @description Component for the main landing page
+ * @description Renders header text for a section
  *
- * @namespace HomeMain
- * @memberof App.components
- * @component
+ * @namespace renderSubheaderTitle
+ * @inner
+ * @memberof App.components.SubHeader
  */
-const HomeMain = () => {
+const renderSubheaderTitle = (title) => {
   return (
-    &lt;Fragment>
-      &lt;HomeHeader />
-      &lt;HomeContents />
-    &lt;/Fragment>
+    &lt;div className="subheader-subtitle">
+      &lt;div className="subheader-subtitle__box">{title}&lt;/div>
+    &lt;/div>
   );
 };
 
-export default HomeMain;
+/**
+ * @description Renders navigation for a section header
+ *
+ * @namespace renderSubNavi
+ * @inner
+ * @memberof App.components.SubHeader
+ */
+const renderSubNavi = (navLinks) => {
+  return (
+    &lt;div className="subheader-subnav">
+      {navLinks.map((navi) => {
+        return (
+          &lt;div className="subheader-subnav__item" key={navi.id}>
+            &lt;a href={navi.url} title={navi.title}>
+              {navi.title}
+            &lt;/a>
+          &lt;/div>
+        );
+      })}
+    &lt;/div>
+  );
+};
+
+/**
+ * @description Reusable section header component
+ *
+ * @namespace SubHeader
+ * @memberof App.components
+ */
+const SubHeader = (data) => {
+  return (
+    &lt;div className="subheader-wrapper">
+      &lt;div className="subheader">
+        &lt;div>{renderSubheaderTitle(data.title)}&lt;/div>
+        &lt;div>{renderSubNavi(data.navLinks)}&lt;/div>
+      &lt;/div>
+    &lt;/div>
+  );
+};
+
+export default SubHeader;
 </code></pre>
         </article>
     </section>

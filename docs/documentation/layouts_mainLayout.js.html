@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/home/homeMain.js</title>
+    <title>JSDoc: Source: layouts/mainLayout.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/home/homeMain.js</h1>
+    <h1 class="page-title">Source: layouts/mainLayout.js</h1>
 
     
 
@@ -26,28 +26,28 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Fragment } from "react";
+            <pre class="prettyprint source linenums"><code>import React from "react";
 
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
+import HeaderLayout from "../layouts/headerLayout";
+import FooterLayout from "../layouts/footerLayout";
 
 /**
- * @description Component for the main landing page
+ * @description Overall layout component for the website
  *
- * @namespace HomeMain
+ * @namespace MainLayout
  * @memberof App.components
- * @component
  */
-const HomeMain = () => {
+const MainLayout = ({ children }) => {
   return (
-    &lt;Fragment>
-      &lt;HomeHeader />
-      &lt;HomeContents />
-    &lt;/Fragment>
+    &lt;div>
+      &lt;HeaderLayout />
+      {children}
+      &lt;FooterLayout />
+    &lt;/div>
   );
 };
 
-export default HomeMain;
+export default MainLayout;
 </code></pre>
         </article>
     </section>

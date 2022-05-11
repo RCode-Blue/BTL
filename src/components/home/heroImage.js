@@ -1,9 +1,15 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import TextBox from "./heroTextBox";
+import HeroTextBox from "./heroTextBox";
 
-const ImageUnderlay = (data) => {
+/**
+ * @description Hero image component
+ *
+ * @namespace HeroImage
+ * @memberof App.components.HomeMain.HomeContents
+ */
+const HeroImage = (data) => {
   const { gatsbyImageData, description } = data.data.image;
 
   const heroText =
@@ -20,7 +26,7 @@ const ImageUnderlay = (data) => {
         className="hero-image"
       />
 
-      <TextBox
+      <HeroTextBox
         heroText={heroText}
         btnString={btnString}
         btnUrl={btnUrl}
@@ -30,4 +36,4 @@ const ImageUnderlay = (data) => {
   );
 };
 
-export default ImageUnderlay;
+export default HeroImage;
