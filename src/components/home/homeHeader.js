@@ -3,6 +3,12 @@ import React, { Fragment } from "react";
 import subHeader from "../_reusables/subheader/subHeader";
 import navLinks from "./pageNav";
 
+/**
+ * @description Header section for the homepage component
+ *
+ * @namespace HomeHeader
+ * @memberof App.components.HomeMain
+ */
 const HomeHeader = () => {
   const renderSubheading = (title) => {
     return subHeader(title);

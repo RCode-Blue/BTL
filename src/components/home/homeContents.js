@@ -6,6 +6,12 @@ import HowItWorks from "./howItWorks";
 import OurTools from "./ourTools";
 import Events from "./events";
 
+/**
+ * @description Content section for the homepage component
+ *
+ * @namespace HomeContents
+ * @memberof App.components.HomeMain
+ */
 const HomeContents = () => {
   const data = FetchHeroImage();
   const imgData = data.allContentfulBannerImage.nodes[0];

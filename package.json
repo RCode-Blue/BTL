@@ -9,7 +9,7 @@
     "dev": "npm-run-all clean gatsbydev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gatsby build",
-    "doc":"documentation build -o './docs' -f 'html"
+    "doc": "jsdoc -c './jsdocConf.json'"
   },
   "repository": {
     "type": "git",
@@ -50,8 +50,10 @@
     "gatsby-source-filesystem": "^4.13.0",
     "gatsby-transformer-documentationjs": "^6.13.0",
     "gatsby-transformer-sharp": "^4.4.0",
+    "jsdoc": "^3.6.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-slick": "^0.29.0",
     "save": "^2.4.0"
   }
 }

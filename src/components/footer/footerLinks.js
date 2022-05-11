@@ -30,7 +30,7 @@ const renderFooterLinks = (footerLinksList) => {
       {footerLinksList.map((linkItem) => {
         const { tabIndex, to, text } = linkItem;
         return (
-          <li>
+          <li key={tabIndex}>
             <Link
               aria-roledescription="navigation link"
               tabIndex={tabIndex}

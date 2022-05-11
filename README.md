@@ -7,6 +7,8 @@ Public facing website proposal for the Brisbane Tool Library.
 A public website proposal for the Brisbane Tool Library.<br><br>
 The project was part of a wider push to generate more revenue for the library and promote the message of building a circular economy. As part of this push, a new website was needed to promote this message, and as a platform to promote upcoming workshops.
 
+A demo of this project is available [here](https://tangerine-donut-437e0a.netlify.app/)
+
 ## Built Using
 
 The main technologies and frameworks used in this project are:

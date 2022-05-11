@@ -5,6 +5,12 @@ import HomeMain from "../components/home/homeMain";
 
 import "../styles/allStyles.scss";
 
+/**
+ * @description Top-level component
+ *
+ * @namespace App.components
+ */
+
 function App() {
   return (
     <MainLayout>
