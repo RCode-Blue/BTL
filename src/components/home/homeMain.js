@@ -1,14 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import HomeHeader from "./homeHeader";
 import HomeContents from "./homeContents";
 
 const HomeMain = () => {
   return (
-    <div>
+    <Fragment>
       <HomeHeader />
       <HomeContents />
-    </div>
+    </Fragment>
   );
 };
 

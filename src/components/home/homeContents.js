@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import FetchHeroImage from "../../queries/fetchHeroImage";
 import HeroImage from "./heroImage";
@@ -11,12 +11,12 @@ const HomeContents = () => {
   const imgData = data.allContentfulBannerImage.nodes[0];
 
   return (
-    <div>
+    <Fragment>
       <HeroImage data={imgData} />
       <HowItWorks />
       <OurTools />
       <Events />
-    </div>
+    </Fragment>
   );
 };
 

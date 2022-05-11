@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import subHeader from "../_reusables/subheader/subHeader";
 import navLinks from "./pageNav";
@@ -11,9 +11,9 @@ const HomeHeader = () => {
   const title = "Welcome to the Brisbane Tool Library";
 
   return (
-    <div>
+    <Fragment>
       <div>{renderSubheading({ title, navLinks })}</div>
-    </div>
+    </Fragment>
   );
 };
 export default HomeHeader;
