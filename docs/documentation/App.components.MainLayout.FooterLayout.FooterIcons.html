@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Namespace: FooterIcons</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Namespace: FooterIcons</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="App.components.html">.components</a><a href="App.components.MainLayout.html">.MainLayout</a><a href="App.components.MainLayout.FooterLayout.html">.FooterLayout</a>.</span>FooterIcons</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>Component for rendering social media icons</p></div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_footer_footerIcons.js.html">components/footer/footerIcons.js</a>, <a href="components_footer_footerIcons.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~renderFooterIcons"><span class="type-signature">(inner) </span>renderFooterIcons<span class="signature">(icons, icon)</span><span class="type-signature"> &rarr; {component}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Renders social media icons</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>icons</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Array of icon objects, returned from query</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>icon</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An icon object</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>node.id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The id of a query result node</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>node.childImageSharp.gatsbyImageData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Icon image object</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_footer_footerIcons.js.html">components/footer/footerIcons.js</a>, <a href="components_footer_footerIcons.js.html#line32">line 32</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A component containing social media icons with links</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">component</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>renderFooterIcons (
+ {
+   node: {
+     id: "360k00b1-e2g3-7ae5-a6ds-f6lf8525c9ee",
+     name: "facebook",
+     childImageSharp: {gatsbyImageData: {}}
+   }
+ }
+)</code></pre>
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="App.components.html">components</a></li><li><a href="App.components.EventBox.html">EventBox</a></li><li><a href="App.components.EventsMain.html">EventsMain</a></li><li><a href="App.components.EventsMain.Events.html">Events</a></li><li><a href="App.components.HomeMain.html">HomeMain</a></li><li><a href="App.components.HomeMain.HomeContents.html">HomeContents</a></li><li><a href="App.components.HomeMain.HomeContents.Events.html">Events</a></li><li><a href="App.components.HomeMain.HomeContents.HeroImage.html">HeroImage</a></li><li><a href="App.components.HomeMain.HomeContents.HeroImage.HeroTextBox.html">HeroTextBox</a></li><li><a href="App.components.HomeMain.HomeContents.HowItWorks.html">HowItWorks</a></li><li><a href="App.components.HomeMain.HomeContents.HowItWorks.HowItWorksColumns.html">HowItWorksColumns</a></li><li><a href="App.components.HomeMain.HomeContents.OurTools.html">OurTools</a></li><li><a href="App.components.HomeMain.HomeHeader.html">HomeHeader</a></li><li><a href="App.components.MainLayout.html">MainLayout</a></li><li><a href="App.components.MainLayout.FooterLayout.html">FooterLayout</a></li><li><a href="App.components.MainLayout.FooterLayout.FooterContent.html">FooterContent</a></li><li><a href="App.components.MainLayout.FooterLayout.FooterIcons.html">FooterIcons</a></li><li><a href="App.components.MainLayout.FooterLayout.FooterLinks.html">FooterLinks</a></li><li><a href="App.components.MainLayout.FooterLayout.FooterLogos.html">FooterLogos</a></li><li><a href="App.components.MainLayout.HeaderLayout.html">HeaderLayout</a></li><li><a href="App.components.MainLayout.HeaderLayout.BtlLogo.html">BtlLogo</a></li><li><a href="App.components.Reusable_ArticleHeader.html">Reusable_ArticleHeader</a></li><li><a href="App.components.Reusable_articleHeader.BlogHeader.html">BlogHeader</a></li><li><a href="App.components.Reusable_articleHeader.EventHeader.html">EventHeader</a></li><li><a href="App.components.Reusable_EventBody.html">Reusable_EventBody</a></li><li><a href="App.components.Reusable_EventDescription.html">Reusable_EventDescription</a></li><li><a href="App.components.Reusable_IconColHome.html">Reusable_IconColHome</a></li><li><a href="App.components.Reusable_TextCol.html">Reusable_TextCol</a></li><li><a href="App.components.SectionHeader.html">SectionHeader</a></li><li><a href="App.components.SectionHeader.SectionHeaderDark.html">SectionHeaderDark</a></li><li><a href="App.components.SectionHeader.SectionHeaderLight.html">SectionHeaderLight</a></li><li><a href="App.components.SubHeader.html">SubHeader</a></li><li><a href="App.components.SubHeader-renderSubheaderTitle.html">renderSubheaderTitle</a></li><li><a href="App.components.SubHeader-renderSubNavi.html">renderSubNavi</a></li></ul><h3>Global</h3><ul><li><a href="global.html#fetchAllEvents">fetchAllEvents</a></li><li><a href="global.html#fetchBtlLogo">fetchBtlLogo</a></li><li><a href="global.html#fetchFooterLogos">fetchFooterLogos</a></li><li><a href="global.html#fetchHeroImage">fetchHeroImage</a></li><li><a href="global.html#fetchHowItWorksIcons">fetchHowItWorksIcons</a></li><li><a href="global.html#fetchOurToolsImages">fetchOurToolsImages</a></li><li><a href="global.html#fetchSocialMediaIcons">fetchSocialMediaIcons</a></li><li><a href="global.html#filterFutureEvents">filterFutureEvents</a></li><li><a href="global.html">renderEventCategories</a></li><li><a href="global.html">renderEventTimes</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Thu May 12 2022 17:55:32 GMT+1000 (Australian Eastern Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

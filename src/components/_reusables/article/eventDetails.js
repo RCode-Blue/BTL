@@ -1,5 +1,17 @@
+/**
+ * @description Reusable component for Event details
+ *
+ * @nameaspace Reusable_EventDetails
+ * @memberof App.components
+ */
 import React from "react";
 
+/**
+ * @description Renders event category
+ *
+ * @function renderEventCategories
+ * @inner
+ */
 const renderEventCategories = (data) => {
   const {
     onlineEvent: isOnline,
@@ -42,7 +54,13 @@ const renderEventCategories = (data) => {
   );
 };
 
-const renderEvtTimes = (data) => {
+/**
+ * @description Renders event times
+ *
+ * @function renderEventTimes
+ * @inner
+ */
+const renderEventTimes = (data) => {
   const { eventStart: start, eventDuration: duration } = data.data;
   return (
     <div className="eventpage-article__details__times">
@@ -59,7 +77,7 @@ const EventDetails = (data) => {
     <div className="eventpage-article__details-wrapper">
       <div className="eventpage-article__details">
         {renderEventCategories(data)}
-        {renderEvtTimes(data)}
+        {renderEventTimes(data)}
       </div>
     </div>
   );

@@ -1,3 +1,9 @@
+/**
+ * @description Reusable event box component
+ *
+ * @namespace EventBox
+ * @memberof App.components
+ */
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
@@ -12,12 +18,6 @@ dayjs.extend(customParseFormat);
 dayjs.extend(advancedFormat);
 dayjs().format("Q Do k kk X x");
 
-/**
- * @description Reusable event box component
- *
- * @namespace EventBox
- * @memberof App.components
- */
 const EventBox = (data) => {
   /**
    * @description Renders the image within an event box

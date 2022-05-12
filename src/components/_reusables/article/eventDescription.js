@@ -1,10 +1,15 @@
+/**
+ * @description Reusable component to display decription of event
+ *
+ * @namespace Reusable_EventDescription
+ * @memberof App.components
+ *
+ */
 import React from "react";
 import richTextOptions from "../../../config/richTextOptions";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 
 const EventDescription = (data) => {
-  const { json } = data;
-
   const options = richTextOptions();
 
   return (

@@ -1,8 +1,12 @@
-// import moment from "moment-timezone";
+/**
+ * @description Filters out events that have happend prior to current date time
+ *
+ * @function filterFutureEvents
+ * @param {AllEvents} allevents
+ */
 import dayjs from "dayjs";
 
 const filterFutureEvents = (allEvents) => {
-  // const today = moment();
   const now = dayjs();
 
   let futureEvents = [];

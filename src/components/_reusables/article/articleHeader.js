@@ -1,7 +1,19 @@
+/**
+ * @description Reusable header components for articles
+ *
+ * @namespace Reusable_ArticleHeader
+ * @memberof App.components
+ */
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+/**
+ * @description Reusable component for event header
+ *
+ * @namespace EventHeader
+ * @memberof App.components.Reusable_articleHeader
+ */
 const EventHeader = () => {
   return (
     <div className="article-head-wrapper">
@@ -21,6 +33,12 @@ const EventHeader = () => {
   );
 };
 
+/**
+ * @description Resuable component for blog header
+ *
+ * @namespace BlogHeader
+ * @memberof App.components.Reusable_articleHeader
+ */
 const BlogHeader = () => {
   return (
     <div className="article-head-wrapper">
