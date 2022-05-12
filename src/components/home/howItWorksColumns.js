@@ -1,3 +1,9 @@
+/**
+ * @description Column layout for 'How it Works' section
+ *
+ * @namespace HowItWorksColumns
+ * @memberof App.components.HomeMain.HomeContents.HowItWorks
+ */
 import React from "react";
 
 import fetchHowItWorksIcons from "../../queries/fetchHowItWorksIcons";
@@ -5,15 +11,8 @@ import {
   TextCol,
   IconColHome,
 } from "../_reusables/contentSection/sectionColumns";
-
 const sample = require("../_reusables/sampleData/sampleText");
 
-/**
- * @description Column layout for 'How it Works' section
- *
- * @namespace HowItWorksColumns
- * @memberof App.components.HomeMain.HomeContents.HowItWorks
- */
 const HowItWorksColumns = () => {
   const queryData = fetchHowItWorksIcons();
   const iconsData = queryData.allContentfulIcon;

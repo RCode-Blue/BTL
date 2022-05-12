@@ -1,6 +1,3 @@
-import React from "react";
-import { Link } from "gatsby";
-
 /**
  * @description Renders title text for 'Become a member' button
  *
@@ -8,6 +5,9 @@ import { Link } from "gatsby";
  * @function renderTextString
  * @memberof App.components.HomeMain.HomeContents.HeroImage
  */
+import React from "react";
+import { Link } from "gatsby";
+
 const renderTextString = (txtString) => {
   return <div className="textbox__text">{txtString}</div>;
 };

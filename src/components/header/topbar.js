@@ -1,3 +1,9 @@
+/**
+ * @description Component for displaying top menu and navigation
+ *
+ * @namespace TopBar
+ * @memberof App.components
+ */
 import React from "react";
 
 import BtlLogo from "./btlLogo";

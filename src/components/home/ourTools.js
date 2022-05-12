@@ -1,7 +1,13 @@
+/**
+ * @description 'Our Tools' section on homepage
+ *
+ * @namespace OurToolsSection
+ * @memberof App.components.HomeMain.HomeContents
+ */
 import React from "react";
 
-import { SectionHeaderDark } from "../_reusables/contentSection/sectionHeader";
 import OurToolsMockup from "./ourToolsMockup";
+import { SectionHeaderDark } from "../_reusables/contentSection/sectionHeader";
 
 const renderOurToolsText = () => {
   return (
@@ -9,12 +15,6 @@ const renderOurToolsText = () => {
   );
 };
 
-/**
- * @description 'Our Tools' section on homepage
- *
- * @namespace OurTools
- * @memberof App.components.HomeMain.HomeContents
- */
 const OurTools = () => {
   const headerText = "Our Tools";
   return (

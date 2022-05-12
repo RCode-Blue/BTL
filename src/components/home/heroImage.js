@@ -1,14 +1,14 @@
-import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
-
-import HeroTextBox from "./heroTextBox";
-
 /**
  * @description Hero image component
  *
  * @namespace HeroImage
  * @memberof App.components.HomeMain.HomeContents
  */
+import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
+
+import HeroTextBox from "./heroTextBox";
+
 const HeroImage = (data) => {
   const { gatsbyImageData, description } = data.data.image;
 

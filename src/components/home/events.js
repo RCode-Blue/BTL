@@ -1,3 +1,10 @@
+/**
+ * @description 'Events' component in homepage
+ *
+ * @namespace HomeEvents
+ * @memberof App.components.HomeMain.HomeContents
+ *
+ */
 import React from "react";
 
 import filterFutureEvents from "../../scripts/filterFutureEvents";
@@ -36,13 +43,6 @@ const renderFutureEvents = (allEvents, size) => {
   );
 };
 
-/**
- * @description 'Events' component in homepage
- *
- * @namespace Events
- * @memberof App.components.HomeMain.HomeContents
- *
- */
 const Events = () => {
   const events = AllEvents();
   const allEvents = events.allContentfulEvent.nodes;

@@ -17,6 +17,11 @@ import EventDetails from "./eventDetails";
  * @inner
  * @memberof App.components.Reusable_EventBody
  *
+ * @requires EventDetails
+ * @requires Reusable_EventDescription
+ * @requires gatsby-plugin-image/GatsbyImage
+ * @see {@link https://www.gatsbyjs.com/plugins/gatsby-plugin-image/}
+ *
  * @param {AllEvents} data
  * @returns {component} Event details component
  */

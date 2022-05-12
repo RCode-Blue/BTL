@@ -4,6 +4,9 @@
  * @namespace Reusable_EventDescription
  * @memberof App.components
  *
+ * @requires gatsby-source-contentful/rich-text
+ * @see {@link https://www.gatsbyjs.com/plugins/gatsby-source-contentful/}
+ *
  */
 import React from "react";
 import richTextOptions from "../../../config/richTextOptions";

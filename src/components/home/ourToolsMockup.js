@@ -1,3 +1,9 @@
+/**
+ * @description Mockup component for 'Our Tools' section
+ *
+ * @namespace OurToolsContents
+ * @memberof App.components.HomeMain.HomeContents.OurToolsSection
+ */
 import React, { Fragment } from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
@@ -9,7 +15,7 @@ const mockTools = [
     fileName: "hammer",
     imgAlt: "hammer",
     title: "Hammer",
-    description: "Stanley 20oz Solid Claw hammer",
+    description: "De Walt 20oz Solid Claw hammer blk",
     ratePerDay: "1",
     availablilty: true,
   },
@@ -61,9 +67,36 @@ const sliderSettings = {
   dotsClass: "ourtools-dots",
   arrows: false,
   infinite: false,
-  slidesToShow: 3,
+  slidesToShow: 5,
   slidesToScroll: 1,
-  variableWidth: true,
+  variableWidth: false,
+  adaptiveHeight: false,
+  responsive: [
+    {
+      breakpoint: 1080,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 870,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 440,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 };
 
 const OurToolsMockup = () => {

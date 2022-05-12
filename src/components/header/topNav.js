@@ -1,3 +1,10 @@
+/**
+ * @description Component for displaying top navigation
+ *
+ * @namespace TopNav
+ * @memberof App.components.TopBar
+ */
+
 import React from "react";
 import { Link } from "gatsby";
 

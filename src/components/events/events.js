@@ -1,18 +1,18 @@
+/**
+ * @description Main events page component
+ *
+ * @namespace EventsPage
+ * @memberof App.components.EventsMain
+ */
+
 import React from "react";
 
-import filterFutureEvents from "../../scripts/filterFutureEvents";
-
 import EventBox from "../_reusables/event/eventBox";
+import filterFutureEvents from "../../scripts/filterFutureEvents";
 import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
 
 import allEvents from "../../queries/fetchAllEvents";
 
-/**
- * @description Main events page component
- *
- * @namespace Events
- * @memberof App.components.EventsMain
- */
 const Events = () => {
   const events = allEvents();
 
@@ -23,7 +23,7 @@ const Events = () => {
    *
    * @function renderFutureEvents
    * @inner
-   * @memberof App.components.EventsMain.Events
+   * @memberof App.components.EventsMain.EventsPage
    *
    * @param {object} allEvents
    * @param {integer} size The number of future events to render

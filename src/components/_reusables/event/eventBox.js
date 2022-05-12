@@ -40,7 +40,8 @@ const EventBox = (data) => {
   };
 
   /**
-   * @description Renders text assocxialted with an event
+   * @description Renders text associalted with an event<br>
+   * Used in Home > Events - Event box - Text overlay
    *
    * @function renderEventBoxSubTxt
    * @inner
@@ -50,8 +51,11 @@ const EventBox = (data) => {
    * @param {string} data.node.eventTitle Event title
    * @param {string} data.node.slug Event details slug
    * @param {string} data.node.id Event id
+   *
+   * @requires dayjs
+   * @see {@link https://day.js.org/}
    */
-  // Home > Events - Event box - Text overlay
+
   const renderEventBoxSubTxt = (data) => {
     const node = data.node;
 

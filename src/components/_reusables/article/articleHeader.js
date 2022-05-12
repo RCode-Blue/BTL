@@ -12,7 +12,12 @@ import { StaticImage } from "gatsby-plugin-image";
  * @description Reusable component for event header
  *
  * @namespace EventHeader
- * @memberof App.components.Reusable_articleHeader
+ * @memberof App.components.Reusable_ArticleHeader
+ *
+ * @requires gatsby/Link
+ * @see {@link https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/}
+ * @requires gatsby-plugin-image/GatsbyImage
+ * @see {@link https://www.gatsbyjs.com/plugins/gatsby-plugin-image/}
  */
 const EventHeader = () => {
   return (
@@ -34,10 +39,10 @@ const EventHeader = () => {
 };
 
 /**
- * @description Resuable component for blog header
+ * @description Reusable component for blog header
  *
  * @namespace BlogHeader
- * @memberof App.components.Reusable_articleHeader
+ * @memberof App.components.Reusable_ArticleHeader
  */
 const BlogHeader = () => {
   return (

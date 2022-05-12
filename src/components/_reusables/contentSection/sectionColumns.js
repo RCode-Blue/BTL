@@ -7,6 +7,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
  *
  * @namespace Reusable_TextCol
  * @memberof App.components
+ *
+ * @requires gatsby-plugin-image/GatsbyImage
+ * @requires gatsby-plugin-image/getImage
+ * @see {@link https://www.gatsbyjs.com/plugins/gatsby-plugin-image/}
  */
 const TextCol = (text) => {
   const { txt } = text;

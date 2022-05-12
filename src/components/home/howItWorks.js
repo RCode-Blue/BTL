@@ -1,14 +1,13 @@
-import React from "react";
-
-import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
-import HowItWorksColumns from "./howItWorksColumns";
-
 /**
  * @description 'How it Works' component in homepage
  *
  * @namespace HowItWorks
  * @memberof App.components.HomeMain.HomeContents
  */
+import React from "react";
+import HowItWorksColumns from "./howItWorksColumns";
+import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";
+
 const HowItWorks = () => {
   const headerText = "How it Works";
 

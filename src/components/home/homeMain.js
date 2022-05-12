@@ -1,8 +1,3 @@
-import React, { Fragment } from "react";
-
-import HomeHeader from "./homeHeader";
-import HomeContents from "./homeContents";
-
 /**
  * @description Component for the main landing page
  *
@@ -10,6 +5,10 @@ import HomeContents from "./homeContents";
  * @memberof App.components
  * @component
  */
+import React, { Fragment } from "react";
+import HomeContents from "./homeContents";
+import HomeHeader from "./homeHeader";
+
 const HomeMain = () => {
   return (
     <Fragment>

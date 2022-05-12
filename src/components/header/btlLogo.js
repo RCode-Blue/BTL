@@ -2,7 +2,7 @@
  * @description Component for main logo
  *
  * @namespace BtlLogo
- * @memberof App.components.MainLayout.HeaderLayout
+ * @memberof App.components.TopBar
  */
 import React from "react";
 
@@ -17,10 +17,10 @@ import FetchBtlLogo from "../../queries/fetchBtlLogo";
  * @memberof App.components.MainLayout.HeaderLayout. BtlLogo
  *
  * @param {object} allContentfulLogo Logo query result
- * @param {object} allCOntentfulLogo.edges Array of logo objects
- * @param {object} allCOntentfulLogo.edges.node
- * @param {object} allCOntentfulLogo.edges.node.image The image to be displayed
- * @param {object} allCOntentfulLogo.edges.node.image.title Image title
+ * @param {object} allContentfulLogo.edges Array of logo objects
+ * @param {object} allContentfulLogo.edges.node
+ * @param {object} allContentfulLogo.edges.node.image The image to be displayed
+ * @param {object} allContentfulLogo.edges.node.image.title Image title
  *
  * @example
  * renderBtlLogo(

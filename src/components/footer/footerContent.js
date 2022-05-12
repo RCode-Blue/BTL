@@ -1,11 +1,11 @@
-import React from "react";
-
 /**
  * @description Footer content component
  *
  * @namespace FooterContent
  * @memberof App.components.MainLayout.FooterLayout
  */
+import React from "react";
+
 const FooterContent = () => {
   return (
     <div
