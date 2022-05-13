@@ -1,0 +1,41 @@
+.welcome-forms-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.welcome-form-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 6rem 0;
+  background-color: $color-content-dark-opacity_1;
+  font-size: $font-size-footer;
+
+  > header {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: $font-size-section-content;
+  }
+}
+
+
+.welcome-form{
+    display: flex;
+    flex-direction: column;
+
+
+    > label{
+      display: grid;
+      grid-template-columns: 15rem 20rem;
+      > input{
+        margin: 0.5rem;
+        font-size: $font-size-section-content;
+      }
+    }
+    > input{
+      margin: 1.5rem 12rem;
+      font-size: $font-size-section-content;
+    }
+}

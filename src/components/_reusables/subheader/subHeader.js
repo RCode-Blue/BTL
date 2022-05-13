@@ -8,7 +8,6 @@ import React, { Fragment } from "react";
  * @memberof App.components.SubHeader
  */
 const renderSubheaderTitle = (title) => {
-  console.log("TITLE: ", title);
   return (
     <div className="subheader-subtitle">
       <div className="subheader-subtitle__box">{title}</div>
@@ -46,7 +45,6 @@ const renderSubNavi = (navLinks) => {
  * @memberof App.components
  */
 const SubHeader = (data) => {
-  console.log("DATA: ", data);
   return (
     <div className="subheader-wrapper">
       <div className="subheader">

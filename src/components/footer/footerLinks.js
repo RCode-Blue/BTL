@@ -10,7 +10,7 @@ import { Link } from "gatsby";
 const footerLinksList = [
   {
     tabIndex: "0",
-    to: "/",
+    to: "/welcome#login",
     text: "Log in",
   },
   {

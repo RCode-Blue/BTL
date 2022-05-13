@@ -24,7 +24,7 @@ const TopNav = () => {
             <Link to="/aboutus">About Us</Link>
           </li>
           <li>
-            <Link to="/welcome">Member Login</Link>
+            <Link to="/welcome#login">Member Login</Link>
           </li>
         </ul>
       </nav>

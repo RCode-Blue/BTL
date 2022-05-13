@@ -10,7 +10,7 @@ const renderBanner = (banner, imgAlt) => {
   return (
     <div>
       <GatsbyImage
-        className="aboutus-banner"
+        className="section-banner"
         layout="fullwidth"
         image={banner}
         alt={imgAlt}
