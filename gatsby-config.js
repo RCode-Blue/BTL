@@ -14,8 +14,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `socialMediaIcons`,
-        path: `${__dirname}/src/assets/socialMediaIcons`,
+        name: `aboutUs`,
+        path: `${__dirname}/src/assets/aboutUs`,
       },
     },
     {
@@ -23,6 +23,13 @@ module.exports = {
       options: {
         name: `ourTools`,
         path: `${__dirname}/src/assets/ourTools`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `socialMediaIcons`,
+        path: `${__dirname}/src/assets/socialMediaIcons`,
       },
     },
     {

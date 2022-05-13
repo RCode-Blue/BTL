@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 /**
  * @description Renders header text for a section
@@ -8,6 +8,7 @@ import React from "react";
  * @memberof App.components.SubHeader
  */
 const renderSubheaderTitle = (title) => {
+  console.log("TITLE: ", title);
   return (
     <div className="subheader-subtitle">
       <div className="subheader-subtitle__box">{title}</div>
@@ -45,11 +46,16 @@ const renderSubNavi = (navLinks) => {
  * @memberof App.components
  */
 const SubHeader = (data) => {
+  console.log("DATA: ", data);
   return (
     <div className="subheader-wrapper">
       <div className="subheader">
         <div>{renderSubheaderTitle(data.title)}</div>
-        <div>{renderSubNavi(data.navLinks)}</div>
+        {data.navLinks ? (
+          <div>{renderSubNavi(data.navLinks)}</div>
+        ) : (
+          <Fragment></Fragment>
+        )}
       </div>
     </div>
   );

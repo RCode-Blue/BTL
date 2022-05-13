@@ -23,7 +23,6 @@ const HeroImage = (data) => {
         layout="fullwidth"
         image={gatsbyImageData}
         alt={description}
-        className="hero-image"
       />
 
       <HeroTextBox

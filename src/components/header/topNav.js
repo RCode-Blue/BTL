@@ -18,19 +18,13 @@ const TopNav = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">Browse the Library</Link>
-          </li>
-          <li>
             <Link to="/events">Events</Link>
           </li>
           <li>
-            <Link to="/">Blogs</Link>
+            <Link to="/aboutus">About Us</Link>
           </li>
           <li>
-            <Link to="/">About Us</Link>
-          </li>
-          <li>
-            <Link to="/">Member Login</Link>
+            <Link to="/welcome">Member Login</Link>
           </li>
         </ul>
       </nav>

@@ -8,7 +8,7 @@ import React, { Fragment } from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
 
-import FetchOurTools from "../../queries/fetchOurTools";
+import fetchOurTools from "../../queries/fetchOurTools";
 
 const mockTools = [
   {
@@ -100,7 +100,7 @@ const sliderSettings = {
 };
 
 const OurToolsMockup = () => {
-  const ourToolsImages = FetchOurTools().edges;
+  const ourToolsImages = fetchOurTools().edges;
 
   const renderOurTools = (mockTools) => {
     return (

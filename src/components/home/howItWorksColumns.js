@@ -8,8 +8,8 @@ import React from "react";
 
 import fetchHowItWorksIcons from "../../queries/fetchHowItWorksIcons";
 import {
-  TextCol,
-  IconColHome,
+  TextCol4,
+  IconCol4,
 } from "../_reusables/contentSection/sectionColumns";
 const sample = require("../_reusables/sampleData/sampleText");
 
@@ -22,16 +22,16 @@ const HowItWorksColumns = () => {
     <div className="section-content-wrapper section-content-wrapper__light">
       <div className="section-cols-4">
         <div>
-          <TextCol txt={sampleTxt} />
+          <TextCol4 txt={sampleTxt} />
         </div>
         <div>
-          <IconColHome iconData={iconsData.nodes[0]} />
+          <IconCol4 iconData={iconsData.nodes[0]} />
         </div>
         <div>
-          <IconColHome iconData={iconsData.nodes[1]} />
+          <IconCol4 iconData={iconsData.nodes[1]} />
         </div>
         <div>
-          <IconColHome iconData={iconsData.nodes[2]} />
+          <IconCol4 iconData={iconsData.nodes[2]} />
         </div>
       </div>
     </div>
