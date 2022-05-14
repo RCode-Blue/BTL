@@ -3,8 +3,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import fetchAboutUsBannerImage from "../../queries/fetchAboutUsImage";
 import AboutUsContent from "./aboutUsContent";
+import Faq from "./faq";
+import PrivacyPolicies from "./privacyPolicies";
+import TermsOfUse from "./termsOfUse";
 import subHeader from "../_reusables/subheader/subHeader";
-import { lorem2 } from "../_reusables/sampleData/sampleText";
 
 const renderBanner = (banner, imgAlt) => {
   return (
@@ -26,16 +28,24 @@ const renderSubheading = (title) => {
 const AboutUs = () => {
   const aboutUsBanner = fetchAboutUsBannerImage().edges[0].node;
   const title = "About Us";
-  const text = lorem2();
   const bannerImage = getImage(aboutUsBanner.childImageSharp.gatsbyImageData);
   return (
-    <div>
+    <article>
       {renderSubheading({ title })}
       {renderBanner(bannerImage, aboutUsBanner.name)}
-      <div className="section-content-wrapper section-content-wrapper__light">
-        <AboutUsContent text={text} />
-      </div>
-    </div>
+      <section className="section-content-wrapper section-content-wrapper__light">
+        <AboutUsContent noOfParagraphs={5} />
+      </section>
+      <section className="section-content-wrapper section-content-wrapper__dark">
+        <Faq noOfParagraphs={5} />
+      </section>
+      <section className="section-content-wrapper section-content-wrapper__light">
+        <PrivacyPolicies noOfParagraphs={2} />
+      </section>
+      <section className="section-content-wrapper section-content-wrapper__dark">
+        <TermsOfUse noOfParagraphs={3} />
+      </section>
+    </article>
   );
 };
 

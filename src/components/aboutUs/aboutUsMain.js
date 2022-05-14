@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import AboutUs from "./aboutUs";
 
 const AboutUsMain = () => {
   return (
-    <div>
+    <Fragment>
       <AboutUs />
-    </div>
+    </Fragment>
   );
 };
 

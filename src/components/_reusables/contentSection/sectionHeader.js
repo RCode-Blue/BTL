@@ -12,6 +12,8 @@ import React from "react";
  *
  * @namespace SectionHeaderDark
  * @memberof App.components.SectionHeader
+ *
+ * @param {string} data.text Section header text
  */
 const SectionHeaderDark = (data) => {
   return (

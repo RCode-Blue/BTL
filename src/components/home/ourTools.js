@@ -11,7 +11,9 @@ import { SectionHeaderDark } from "../_reusables/contentSection/sectionHeader";
 
 const renderOurToolsText = () => {
   return (
-    <p className="ourtools-content">Here are some of our most popular tools</p>
+    <p className="ourtools-content section-content section-content__dark">
+      Here are some of our most popular tools
+    </p>
   );
 };
 

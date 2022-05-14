@@ -5,18 +5,30 @@
  * @memberof App.components.HomeMain.HomeContents.HowItWorks
  */
 import React from "react";
+import { LoremIpsum } from "lorem-ipsum";
 
 import fetchHowItWorksIcons from "../../queries/fetchHowItWorksIcons";
 import {
   TextCol4,
   IconCol4,
 } from "../_reusables/contentSection/sectionColumns";
-const sample = require("../_reusables/sampleData/sampleText");
 
 const HowItWorksColumns = () => {
   const queryData = fetchHowItWorksIcons();
   const iconsData = queryData.allContentfulIcon;
-  const sampleTxt = sample.lorem();
+
+  const lorem = new LoremIpsum({
+    sentencesPerParagraph: {
+      max: 6,
+      min: 2,
+    },
+    wordsPerSentence: {
+      max: 22,
+      min: 10,
+    },
+  });
+
+  const sampleTxt = lorem.generateParagraphs(1);
 
   return (
     <div className="section-content-wrapper section-content-wrapper__light">

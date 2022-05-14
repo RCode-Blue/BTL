@@ -63,6 +63,17 @@
 }
 /* #endregion */
 
+.section-content{
+  font-size: $font-size-section-content;
+  &__light{
+    @include mixins.section-wrapper-padding-light;
+  }
+  &__dark{
+    @include mixins.section-wrapper-padding-dark;
+
+  }
+}
+
 // Section Columns - 4 columns (content)
 /* #region */
 .section-cols-4 {

@@ -3,4 +3,7 @@
 .aboutus-content{
   padding-top: 5rem;
   font-size: $font-size-section-content;
+  &__paragraph{
+    padding: 2rem 0
+  }
 }
