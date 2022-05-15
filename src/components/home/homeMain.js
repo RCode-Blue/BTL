@@ -1,7 +1,7 @@
 /**
  * @description Component for the main landing page
  *
- * @namespace HomeMain
+ * @namespace Home
  * @memberof App.components
  * @component
  */

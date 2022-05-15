@@ -1,6 +1,3 @@
-import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
 /**
  * @description Reusable layout component for a text portion of a 4-column sections <br>
  * Used in Home > How it Works > Text segment
@@ -12,6 +9,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
  * @requires gatsby-plugin-image/getImage
  * @see {@link https://www.gatsbyjs.com/plugins/gatsby-plugin-image/}
  */
+
+import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
 const TextCol4 = (text) => {
   const { txt } = text;
   return <div className="section-cols-4__text">{txt}</div>;

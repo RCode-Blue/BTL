@@ -3,7 +3,7 @@
  *
  * @inner
  * @function renderTextString
- * @memberof App.components.HomeMain.HomeContents.HeroImage
+ * @memberof App.components.Home.HomeContents.HeroImage
  */
 import React from "react";
 import { Link } from "gatsby";

@@ -2,7 +2,7 @@
  * @description Mockup component for 'Our Tools' section
  *
  * @namespace OurToolsContents
- * @memberof App.components.HomeMain.HomeContents.OurToolsSection
+ * @memberof App.components.Home.HomeContents.OurToolsSection
  */
 import React, { Fragment } from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";

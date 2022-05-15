@@ -1,3 +1,9 @@
+/**
+ * @description Component for the "Privacy Policies" section
+ *
+ * @namespace PrivacyPolicies
+ * @memberof Apps.component.AboutUs.AboutUsPage
+ */
 import React from "react";
 import generateMockParagraphs from "../../scripts/generateMockParagraphs";
 import { SectionHeaderLight } from "../_reusables/contentSection/sectionHeader";

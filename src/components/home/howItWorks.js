@@ -2,7 +2,7 @@
  * @description 'How it Works' component in homepage
  *
  * @namespace HowItWorks
- * @memberof App.components.HomeMain.HomeContents
+ * @memberof App.components.Home.HomeContents
  */
 import React from "react";
 import HowItWorksColumns from "./howItWorksColumns";

@@ -1,3 +1,9 @@
+/**
+ * @description Component for the "About Us" page contents
+ *
+ * @namespace AboutUsPage
+ * @memberof Apps.component.AboutUs
+ */
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
@@ -25,7 +31,7 @@ const renderSubheading = (title) => {
   return subHeader(title);
 };
 
-const AboutUs = () => {
+const AboutUsPage = () => {
   const aboutUsBanner = fetchAboutUsBannerImage().edges[0].node;
   const title = "About Us";
   const bannerImage = getImage(aboutUsBanner.childImageSharp.gatsbyImageData);
@@ -49,4 +55,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsPage;

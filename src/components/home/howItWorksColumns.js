@@ -2,7 +2,7 @@
  * @description Column layout for 'How it Works' section
  *
  * @namespace HowItWorksColumns
- * @memberof App.components.HomeMain.HomeContents.HowItWorks
+ * @memberof App.components.Home.HomeContents.HowItWorks
  */
 import React from "react";
 import { LoremIpsum } from "lorem-ipsum";

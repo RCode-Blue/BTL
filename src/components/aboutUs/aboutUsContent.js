@@ -1,3 +1,9 @@
+/**
+ * @description Component for the "About Us" section contents
+ *
+ * @namespace AboutUsContents
+ * @memberof Apps.component.AboutUs.AboutUsPage
+ */
 import React, { Fragment } from "react";
 import generateMockParagraphs from "../../scripts/generateMockParagraphs";
 

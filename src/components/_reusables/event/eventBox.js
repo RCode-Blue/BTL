@@ -1,7 +1,7 @@
 /**
  * @description Reusable event box component
  *
- * @namespace EventBox
+ * @namespace Reusable_EventBox
  * @memberof App.components
  */
 import React from "react";

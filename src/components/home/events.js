@@ -2,7 +2,7 @@
  * @description 'Events' component in homepage
  *
  * @namespace HomeEvents
- * @memberof App.components.HomeMain.HomeContents
+ * @memberof App.components.Home.HomeContents
  *
  */
 import React from "react";

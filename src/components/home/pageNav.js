@@ -1,3 +1,9 @@
+/**
+ * @description Navigation elements for the home page
+ *
+ * @@namespage pageNav
+ * @memberof App.components.Home.HomeHeader
+ */
 const navLinks = [
   {
     id: 1,

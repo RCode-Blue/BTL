@@ -2,7 +2,7 @@
  * @description Header section for the homepage component
  *
  * @namespace HomeHeader
- * @memberof App.components.HomeMain
+ * @memberof App.components.Home
  */
 import React, { Fragment } from "react";
 import navLinks from "./pageNav";

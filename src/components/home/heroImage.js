@@ -2,7 +2,7 @@
  * @description Hero image component
  *
  * @namespace HeroImage
- * @memberof App.components.HomeMain.HomeContents
+ * @memberof App.components.Home.HomeContents
  */
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";

@@ -1,10 +1,17 @@
+/**
+ * @description Component for the "About Us" page
+ *
+ * @namespace AboutUs
+ * @memberof Apps.component
+ */
+
 import React, { Fragment } from "react";
-import AboutUs from "./aboutUs";
+import AboutUsPage from "./aboutUsPage";
 
 const AboutUsMain = () => {
   return (
     <Fragment>
-      <AboutUs />
+      <AboutUsPage />
     </Fragment>
   );
 };

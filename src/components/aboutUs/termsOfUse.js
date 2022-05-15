@@ -1,3 +1,9 @@
+/**
+ * @description Component for the "Terms of Use" section
+ *
+ * @namespace TermsOfUse
+ * @memberof Apps.component.AboutUs.AboutUsPage
+ */
 import React from "react";
 import generateMockParagraphs from "../../scripts/generateMockParagraphs";
 import { SectionHeaderDark } from "../_reusables/contentSection/sectionHeader";

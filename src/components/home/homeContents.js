@@ -2,7 +2,7 @@
  * @description Content section for the homepage component
  *
  * @namespace HomeContents
- * @memberof App.components.HomeMain
+ * @memberof App.components.Home
  */
 import React, { Fragment } from "react";
 

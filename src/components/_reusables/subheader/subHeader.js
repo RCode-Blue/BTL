@@ -1,12 +1,18 @@
-import React, { Fragment } from "react";
+/**
+ * @description Reusable section header component
+ *
+ * @namespace Reusable_SubHeader
+ * @memberof App.components
+ */
 
 /**
  * @description Renders header text for a section
  *
- * @namespace renderSubheaderTitle
+ * @function renderSubheaderTitle
  * @inner
- * @memberof App.components.SubHeader
  */
+import React, { Fragment } from "react";
+
 const renderSubheaderTitle = (title) => {
   return (
     <div className="subheader-subtitle">
@@ -18,9 +24,8 @@ const renderSubheaderTitle = (title) => {
 /**
  * @description Renders navigation for a section header
  *
- * @namespace renderSubNavi
+ * @function renderSubNavi
  * @inner
- * @memberof App.components.SubHeader
  */
 const renderSubNavi = (navLinks) => {
   return (
@@ -38,12 +43,6 @@ const renderSubNavi = (navLinks) => {
   );
 };
 
-/**
- * @description Reusable section header component
- *
- * @namespace SubHeader
- * @memberof App.components
- */
 const SubHeader = (data) => {
   return (
     <div className="subheader-wrapper">

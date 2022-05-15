@@ -2,7 +2,7 @@
  * @description 'Our Tools' section on homepage
  *
  * @namespace OurToolsSection
- * @memberof App.components.HomeMain.HomeContents
+ * @memberof App.components.Home.HomeContents
  */
 import React from "react";
 

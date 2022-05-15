@@ -1,7 +1,7 @@
 /**
  * @description Reusable component for Event details
  *
- * @nameaspace Reusable_EventDetails
+ * @namespace Reusable_EventDetails
  * @memberof App.components
  */
 import React from "react";
