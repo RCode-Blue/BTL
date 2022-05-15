@@ -2,7 +2,7 @@
  * @description Component for the "About Us" page
  *
  * @namespace AboutUs
- * @memberof Apps.component
+ * @memberof App.components
  */
 
 import React, { Fragment } from "react";
