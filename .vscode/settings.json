@@ -32,8 +32,6 @@
   
 
   "window.zoomLevel": 1,
-
-  "workbench.activityBar.visible": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
 
